@@ -5,6 +5,211 @@
     <title>Assignment Edit</title>
 </head>
 <body>
+<table border="0" width="100%">
+    <tbody>
+    <tr>
+        <td valign="top">
+            <ul>
+                <li>
+                    <a href="/Kanbas/Account/Profile/screen.html">Account</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Home/home.html">Courses</a>
+                </li>
+                <li>
+                    <a href="#">Calendar</a>
+                </li>
+                <li>
+                    <a href="#">Inbox</a>
+                </li>
+                <li>
+                    <a href="#">Studio</a>
+                </li>
+                <li>
+                    <a href="#">History</a>
+                </li>
+                <li>
+                    <a href="#">Commons</a>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+            </ul>
+        </td>
+        <td valign="top">
+            <ul>
+                <li>
+                    <a href="/Kanbas/Courses/Home/home.html">Home</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a>
+                </li>
+                <li>
+                    <a href="#">Zoom Meetings</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+                </li>
+                <li>
+                    <a href="#">People</a>
+                </li>
+                <li>
+                    <a href="#">Panopto Video</a>
+                </li>
+                <li>
+                    <a href="#">Discussions</a>
+                </li>
+                <li>
+                    <a href="#">Announcements</a>
+                </li>
+                <li>
+                    <a href="#">Pages</a>
+                </li>
+                <li>
+                    <a href="#">Files</a>
+                </li>
+                <li>
+                    <a href="#">Rubrics</a>
+                </li>
+                <li>
+                    <a href="#">Outcomes</a>
+                </li>
+                <li>
+                    <a href="#">Collaborations</a>
+                </li>
+                <li>
+                    <a href="#">Syllabus</a>
+                </li>
+                <li>
+                    <a href="#">Settings</a>
+                </li>
+            </ul>
+        </td>
+        <td valign="top">
+            <select>
+                <option>SpeedGrader</option>
+                <option>SpeedGrader 1</option>
+                <option>SpeedGrader 2</option>
+            </select>
 
+            <!-- TODO: Underline -->
+
+            <h2>Assignment Name</h2>
+            <p><input type="text" value="A1 - ENV + HTML"/></p>
+            <p>
+            <form id="textarea">
+                <textarea cols="30" rows="2">This is the assignment description.</textarea>
+            </form>
+            </p>
+            <p>Points<br/><input type="number" value="100"/></p>
+
+            <p>
+                Assigment Group<br/>
+                <select>
+                    <option>ASSIGNMENTS</option>
+                </select>
+            </p>
+
+            <p>
+                Display Grade as<br/>
+                <select>
+                    <option>Percentage</option>
+                </select>
+            </p>
+
+            <p>
+                Submission Type<br/>
+                <select>
+                    <option>Online</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Online Entry Options</label>
+                <br/>
+                <input type="checkbox"
+                       name="check-entry-options" id="chkbox-text-entry"/>
+                <label for="chkbox-text-entry">Text Entry</label> <br/>
+                <input type="checkbox"
+                       name="check-entry-options" id="chkbox-website-url"/>
+                <label for="chkbox-website-url">Website URL</label> <br/>
+                <input type="checkbox"
+                       name="check-entry-options" id="chkbox-media-recordings"/>
+                <label for="chkbox-media-recordings">Media Recordings</label> <br/>
+                <input type="checkbox"
+                       name="check-entry-options" id="chkbox-student-annotation"/>
+                <label for="chkbox-student-annotation">Student Annotation</label> <br/>
+                <input type="checkbox"
+                       name="check-entry-options" id="chkbox-file-uploads"/>
+                <label for="chkbox-file-uploads">File Uploads</label>
+            </p>
+
+            <p>
+                Submission Attempts<br/>
+                <select>
+                    <option>Unlimited</option>
+                </select>
+            </p>
+
+            <p>
+                Plagiarism Review<br/>
+                <select>
+                    <option>None</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Group Assignment</label>
+                <br/>
+                <input type="checkbox"
+                       name="check-entry-options" id="chkbox-group-assignment"/>
+                <label for="chkbox-group-assignment">This is a group assignment</label> <br/>
+            </p>
+
+            <p>
+                <label>Peer Reviews</label>
+                <br/>
+                <input type="checkbox"
+                       name="check-entry-options" id="chkbox-peer-reviews"/>
+                <label for="chkbox-peer-reviews">Require Peer Reviews</label> <br/>
+            </p>
+
+            <p>
+                Assign To<br/>
+                <input type="text" value="Everyone"/>
+            </p>
+
+            <p>
+                Due<br/>
+                <input type="date" value="2021-01-01"/>
+            </p>
+
+            <p>
+                Available From<br/>
+                <input type="date" value="2021-01-01"/>
+            </p>
+
+            <p>
+                Until<br/>
+                <input type="date" value="2021-01-01"/>
+            </p>
+
+            <p>
+                <button>Cancel</button>
+                <button>Save</button>
+            </p>
+        </td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>

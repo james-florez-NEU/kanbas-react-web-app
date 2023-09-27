@@ -13,7 +13,7 @@
     color: red;
 }
 
-.kanbas_navigation_icon_account {
+.kanbas_navigation_icon_selected {
     color: white;
 }
 
@@ -22,12 +22,9 @@
     padding: 10px;
 }
 
-.neu_logo {
-    display: block;
-    overflow: hidden;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
+.kanbas_navigation img {
+    width: 100%; /* Make the image fill the width of its container */
+    height: auto; /* Maintain the image's aspect ratio */
 }
 
 a:link {

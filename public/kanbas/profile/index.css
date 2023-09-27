@@ -18,8 +18,11 @@ a:active {
     text-decoration: none;
 }
 
-/* Apply a custom background color to the .btn class */
-.btn {
-    background-color: rgb(128, 128, 128); /* Use your desired shade of gray */
-    /* You can also set other styles such as text color, border, etc. here */
+.btn-secondary {
+    background-color: #D3D3D3;
+}
+
+.btn-primary {
+    background-color: red;
+    color: white;
 }

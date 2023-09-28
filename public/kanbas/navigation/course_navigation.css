@@ -26,3 +26,8 @@ a:active {
 a {
     color: red;
 }
+
+.course_navigation_active a {
+    color: black;
+}
+

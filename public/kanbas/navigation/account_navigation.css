@@ -26,3 +26,7 @@ a:active {
 a {
     color: red;
 }
+
+.account_navigation_active a {
+    color: black;
+}

@@ -8,20 +8,24 @@
     <link href="home.css" rel="stylesheet"/>
 </head>
 <body>
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">CS5610</a></li>
-        <li class="breadcrumb-item"><a href="#">12631</a></li>
-        <li class="breadcrumb-item"><a href="#">202410</a></li>
-        <li class="breadcrumb-item">></li>
-        <li class="breadcrumb-item active" aria-current="page">Home</li>
-    </ol>
-</nav>
+<div class="fixed-top">
+<!--    TODO: Work on the fixed position and the student view button-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">CS5610</a></li>
+            <li class="breadcrumb-item"><a href="#">12631</a></li>
+            <li class="breadcrumb-item"><a href="#">202410</a></li>
+            <li class="breadcrumb-item">></li>
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+    </nav>
 
-<button class="btn btn-secondary float-end">
-    <i class="fa-solid fa-glasses"></i> Student View</button><br/>
-<hr/>
+    <button class="btn btn-secondary float-end">
+        <i class="fa-solid fa-glasses"></i> Student View</button><br/>
+    <hr/>
+</div>
 
+<div class="wd-fixed-top-margin">
 <div>
     <button class="btn btn-secondary float-end"><i class="fa fa-ellipsis-v float-left" aria-hidden="true"></i></button>
     <button class="btn btn-danger float-end">
@@ -300,5 +304,6 @@
     </ul>
 </div>
 
+</div>
 </body>
 </html>

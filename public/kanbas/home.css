@@ -34,3 +34,7 @@ a {
     background-color: #D3D3D3;
     color: black;
 }
+
+.wd-fixed-top-margin {
+    margin-top: 70px;
+}

@@ -25,3 +25,12 @@ a {
 .fa-check-circle {
     color: green;
 }
+
+.btn-primary {
+    background-color: mediumseagreen;
+}
+
+.btn-secondary {
+    background-color: #D3D3D3;
+    color: black;
+}

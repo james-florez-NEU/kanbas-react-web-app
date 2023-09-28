@@ -22,21 +22,27 @@
 <hr/>
 
 <div>
-    <button class="btn btn-secondary">Collapse All</button>
-    <button class="btn btn-secondary">View Progress</button>
-    <select>
-        <option>
-            <i class="fa fa-check-circle" aria-hidden="true"></i>
-            Publish All
-        </option>
-    </select>
-    <button class="btn btn-danger">
+    <button class="btn btn-secondary float-end"><i class="fa fa-ellipsis-v float-left" aria-hidden="true"></i></button>
+    <button class="btn btn-danger float-end">
         <i class="fa fa-plus" aria-hidden="true"></i>
         Module
     </button>
+    <div class="dropdown float-end">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-regular fa-circle-check" style="color: green"></i>
+            Publish All
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div>
+    <button class="btn btn-secondary float-end">View Progress</button>
+    <button class="btn btn-secondary float-end">Collapse All</button>
+    <br/>
+    <hr/>
 </div>
-
-
 
 <div>
     <ul class="list-group">
@@ -224,48 +230,74 @@
 </div>
 
 
+<div>
+    <h4>Course Status</h4>
+    <div>
+        <button class="btn btn-secondary">Unpublish</button>
+        <button class="btn btn-primary">
+            <i class="fa fa-check-circle" style="color: white"></i>
+            Published
+        </button>
+    </div><br/>
+    <div>
+        <button class="btn btn-secondary">Import Existing Content</button>
+    </div>
+    <div>
+        <button class="btn btn-secondary">Import From Commons</button>
+    </div>
+    <div>
+        <button class="btn btn-secondary">Choose Home Page</button>
+    </div>
+    <div>
+        <button class="btn btn-secondary">View Course Stream</button>
+    </div>
+    <div>
+        <button class="btn btn-secondary">New Announcement</button>
+    </div>
+    <div>
+        <button class="btn btn-secondary">New Analytics</button>
+    </div>
+    <div>
+        <button class="btn btn-secondary">View Course Notification</button>
+    </div>
 
-        <td valign="top">
-            <h2>Course Status</h2>
-            <button>Unpublish</button>
-            <button>Published</button>
-            <ul>
-                <li>
-                    <a href="#">Import Existing Content</a>
-                </li>
-                <li>
-                    <a href="#">Import From Commons</a>
-                </li>
-                <li>
-                    <a href="#">Choose Home Page</a>
-                </li>
-                <li>
-                    <a href="#">View Course Stream</a>
-                </li>
-                <li>
-                    <a href="#">New Announcement</a>
-                </li>
-                <li>
-                    <a href="#">New Analytics</a>
-                </li>
-                <li>
-                    <a href="#">View Course Notification</a>
-                </li>
-            </ul>
-            <h2>Coming Up</h2>
-            <a href="#">View Calendar</a>
-            <ul>
-                <li>
-                    <a href="#">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a>
-                </li>
-                <li>
-                    <a href="#">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a>
-                </li>
-                <li>
-                    <a href="#">CS5610 SP23 Lecture Sep 11 at 6pm</a>
-                </li>
-            </ul>
+    <h4>To Do</h4><br/><hr/>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="#">Grade A1 - ENV + HTML</a><br/>
+            100 points * Sep 18 at 11:59pm
+        </li>
+    </ul>
 
+    <h4>Coming Up</h4>
+    <a href="#" class="float-end">View Calendar</a>
+    <i class="fa-regular fa-calendar float-end"></i>
+    <br/><hr/>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <i class="fa-regular fa-calendar"></i>
+            <a href="#">Lecture</a><br/>
+            CS4550.12631.202410<br/>
+            Sep 7 at 11:45am
+        </li>
+        <li class="list-group-item">
+            <i class="fa-regular fa-calendar"></i>
+            <a href="#">Lecture</a><br/>
+            CS4550.12631.202410<br/>
+            Sep 11 at 11:45am
+        </li>
+        <li class="list-group-item">
+            <i class="fa-regular fa-calendar"></i>
+            <a href="#">CS5610 SP23 Lecture</a><br/>
+            CS5610.12631.202410<br/>
+            Sep 11 at 6pm
+        </li>
+        <li class="list-group-item">
+            <a href="#">12 more in the next week ...</a>
+        </li>
+    </ul>
+</div>
 
 </body>
 </html>

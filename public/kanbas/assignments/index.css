@@ -1,0 +1,47 @@
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a {
+    color: red;
+}
+
+.fa-check-circle {
+    color: green;
+}
+
+.btn-secondary {
+    background-color: #D3D3D3;
+    color: black;
+}
+
+.fa-book {
+    color: green;
+}
+
+.list-group-item {
+    border-left: 2px;
+    border-left-color: green;
+    border-radius: 0;
+}
+
+.list-group {
+    border-radius: 0;
+}
+
+.badge-secondary {
+    border: 1px;
+    border-color: black;
+}

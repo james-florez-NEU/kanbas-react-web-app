@@ -18,8 +18,30 @@ a {
     color: red;
 }
 
+.assignment_link a {
+    color:black
+}
+
 .fa-check-circle {
     color: green;
+    margin: 20px;
+}
+
+.fa-book {
+    margin: 20px;
+}
+
+.fa-caret-down {
+    margin: 20px;
+}
+
+.fa-ellipsis-v {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rounded-pill {
+    margin-top: 20px;
 }
 
 .btn-secondary {
@@ -32,8 +54,7 @@ a {
 }
 
 .list-group-item {
-    border-left: 2px;
-    border-left-color: green;
+    border-left: 6px solid green;
     border-radius: 0;
 }
 

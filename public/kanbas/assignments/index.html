@@ -24,7 +24,7 @@
 
 <div>
     <input type="text" class="form-control w-25" id="search-for-assignment" placeholder="Search for Assignment">
-    <button class="btn btn-secondary float-end"><i class="fa fa-ellipsis-v float-left" aria-hidden="true"></i></button>
+    <button class="btn btn-secondary float-end"><i class="fa fa-ellipsis-v float-left" aria-hidden="true" style="margin: 0"></i></button>
     <button class="btn btn-danger float-end">
         <i class="fa fa-plus" aria-hidden="true"></i>
         Assignment
@@ -44,9 +44,13 @@
             <i class="fa fa-ellipsis-v float-left fa-2x" aria-hidden="true"></i>
             <i class="fa-solid fa-caret-down float-left fa-2x"></i>
             <i class="fa fa-ellipsis-v float-end fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-plus float-end fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-plus float-end fa-2x" aria-hidden="true"  style="margin: 20px"></i>
             <button class="btn btn-secondary float-end rounded-pill">40% of Total</button>
-            <h5>Assignments</h5>
+            <div>
+<!--                TODO: How to center this?-->
+                <h5>Assignments</h5>
+            </div>
+
 
         </li>
         <li class="list-group-item">
@@ -56,8 +60,8 @@
                     <i class="fa fa-ellipsis-v float-left fa-2x" aria-hidden="true"></i>
                     <i class="fa fa-thin fa-book float-left fa-2x"></i>
                 </div>
-                <div class="col-8">
-                    <h5>A1 SETUP</h5>
+                <div class="col-8 assignment_link">
+                    <h5><a href="/kanbas/assignments/edit.html">A1 SETUP</a></h5>
                     Week 0 - SETUP<br/>
                     Due Sep 18, 2022 at 11:59pm | 100 pts
                 </div>
@@ -74,8 +78,8 @@
                     <i class="fa fa-ellipsis-v float-left fa-2x" aria-hidden="true"></i>
                     <i class="fa fa-thin fa-book float-left fa-2x"></i>
                 </div>
-                <div class="col-8">
-                    <h5>A2 HTML</h5>
+                <div class="col-8 assignment_link">
+                    <h5><a href="/kanbas/assignments/edit.html">A2 HTML</a></h5>
                     Week 1 - HTML<br/>
                     Due Sep 25, 2022 at 11:59pm | 100 pts
                 </div>
@@ -92,8 +96,8 @@
                     <i class="fa fa-ellipsis-v float-left fa-2x" aria-hidden="true"></i>
                     <i class="fa fa-thin fa-book float-left fa-2x"></i>
                 </div>
-                <div class="col-8">
-                    <h5>A3 CSS</h5>
+                <div class="col-8 assignment_link">
+                    <h5><a href="/kanbas/assignments/edit.html">A3 CSS</a></h5>
                     Week 2 - CSS<br/>
                     Due Oct 2, 2022 at 11:59pm | 100 pts
                 </div>
@@ -110,8 +114,8 @@
                     <i class="fa fa-ellipsis-v float-left fa-2x" aria-hidden="true"></i>
                     <i class="fa fa-thin fa-book float-left fa-2x"></i>
                 </div>
-                <div class="col-8">
-                    <h5>A4 BOOTSTRAP</h5>
+                <div class="col-8 assignment_link">
+                    <h5><a href="/kanbas/assignments/edit.html">A4 BOOTSTRAP</a></h5>
                     Week 3 - Bootstrap<br/>
                     Due Oct 10, 2022 at 11:59pm | 100 pts
                 </div>
@@ -128,8 +132,8 @@
                     <i class="fa fa-ellipsis-v float-left fa-2x" aria-hidden="true"></i>
                     <i class="fa fa-thin fa-book float-left fa-2x"></i>
                 </div>
-                <div class="col-8">
-                    <h5>A5 JAVASCRIPT</h5>
+                <div class="col-8 assignment_link">
+                    <h5><a href="/kanbas/assignments/edit.html">A5 JAVASCRIPT</a></h5>
                     Week 4 - JavaScript<br/>
                     Due Oct 16, 2022 at 11:59pm | 100 pts
                 </div>
@@ -146,8 +150,8 @@
                     <i class="fa fa-ellipsis-v float-left fa-2x" aria-hidden="true"></i>
                     <i class="fa fa-thin fa-book float-left fa-2x"></i>
                 </div>
-                <div class="col-8">
-                    <h5>A6 REACT</h5>
+                <div class="col-8 assignment_link">
+                    <h5><a href="/kanbas/assignments/edit.html">A6 REACT</a></h5>
                     Week 5 - React & Routing<br/>
                     Due Oct 23, 2022 at 11:59pm | 100 pts
                 </div>
@@ -159,40 +163,5 @@
         </li>
     </ul>
 </div>
-
-            <h2 style="display: inline;">ASSIGNMENTS 40% of Total</h2>
-            <ul>
-                <li>
-                    <a href="/kanbas/assignments/edit.html">A1 - ENV + HTML</a>
-                    <br/>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/kanbas/assignments/edit.html">A2 - CSS + BOOTSRAP</a>
-                    <br/>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/kanbas/assignments/edit.html">A3 - JS + REACT</a>
-                    <br/>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/kanbas/assignments/edit.html">A4 - STATE + REDUX</a>
-                    <br/>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/kanbas/assignments/edit.html">A5 - NODE + SESSION</a>
-                    <br/>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/kanbas/assignments/edit.html">A6 - MONGO + MONGOOSE</a>
-                    <br/>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-            </ul>
-
 </body>
 </html>

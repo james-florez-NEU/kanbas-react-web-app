@@ -40,3 +40,9 @@ a:active {
 a {
     color: red;
 }
+
+.btn-secondary {
+    background-color: white;
+    border: 0;
+    color: black;
+}

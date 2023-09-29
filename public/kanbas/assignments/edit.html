@@ -30,114 +30,111 @@
 </div>
 
 <div>
+    <label for="assignment_name">Assignment Name</label><br/>
+    <input type="text" id="assignment_name" class="form-control" value="A1 - ENV + HTML">
+    <textarea cols="30" rows="4" class="form-control">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.</textarea>
+</div>
+
+<div>
+    <div class="row">
+        <div class="col-3">
+            Points
+        </div>
+        <div class="col-9">
+            <input type="number" class="form-control" value="100"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            Assignment Group
+        </div>
+        <div class="col-9">
+            <select class="form-control">
+                <option>ASSIGNMENTS</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            Display Grade as
+        </div>
+        <div class="col-9">
+            <select class="form-control">
+                <option>Percentage</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-9">
+            <input type="checkbox" id="chkbox-final-grade"/>
+            <label for="chkbox-final-grade">Do not count this assignment towards the final grade</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            Submission Type
+        </div>
+        <div class="col-9">
+            <div class="form-control">
+                <select class="form-control">
+                    <option>Online</option>
+                </select>
+                <label><h6>Online Entry Options</h6></label>
+                <br/>
+                <input type="checkbox" name="check-entry-options" id="chkbox-text-entry"/>
+                <label for="chkbox-text-entry">Text Entry</label> <br/>
+                <input type="checkbox" name="check-entry-options" id="chkbox-website-url"/>
+                <label for="chkbox-website-url">Website URL</label> <br/>
+                <input type="checkbox" name="check-entry-options" id="chkbox-media-recordings"/>
+                <label for="chkbox-media-recordings">Media Recordings</label> <br/>
+                <input type="checkbox" name="check-entry-options" id="chkbox-student-annotation"/>
+                <label for="chkbox-student-annotation">Student Annotation</label> <br/>
+                <input type="checkbox" name="check-entry-options" id="chkbox-file-uploads"/>
+                <label for="chkbox-file-uploads">File Uploads</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            Assign
+        </div>
+        <div class="col-9">
+            <div class="form-control">
+                <label for="assign-to"><h6>Assign To</h6></label>
+                <select class="form-control" id="assign-to">
+                    <option>Everyone</option>
+                </select>
+                <label for="due-date"><h6>Due</h6></label>
+                <input type="date" class="form-control" id="due-date" value="2023-09-23"/>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="available-from"><h6>Available From</h6></label>
+                        <input type="date" class="form-control" id="available-from" value="2023-09-06"/>
+                    </div>
+                    <div class="col-6">
+                        <label for="until"><h6>Until</h6></label>
+                        <input type="date" class="form-control" id="until"/>
+                    </div>
+                </div>
+                <button class="btn btn-secondary form-control">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    Add
+                </button>
+            </div>
+        </div>
+    </div>
 
 </div>
 
-            <h2>Assignment Name</h2>
-            <p><input type="text" value="A1 - ENV + HTML"/></p>
-            <p>
-            <form id="textarea">
-                <textarea cols="30" rows="2">This is the assignment description.</textarea>
-            </form>
-            </p>
-            <p>Points<br/><input type="number" value="100"/></p>
-
-            <p>
-                Assigment Group<br/>
-                <select>
-                    <option>ASSIGNMENTS</option>
-                </select>
-            </p>
-
-            <p>
-                Display Grade as<br/>
-                <select>
-                    <option>Percentage</option>
-                </select>
-            </p>
-
-            <p>
-                Submission Type<br/>
-                <select>
-                    <option>Online</option>
-                </select>
-            </p>
-
-            <p>
-                <label>Online Entry Options</label>
-                <br/>
-                <input type="checkbox"
-                       name="check-entry-options" id="chkbox-text-entry"/>
-                <label for="chkbox-text-entry">Text Entry</label> <br/>
-                <input type="checkbox"
-                       name="check-entry-options" id="chkbox-website-url"/>
-                <label for="chkbox-website-url">Website URL</label> <br/>
-                <input type="checkbox"
-                       name="check-entry-options" id="chkbox-media-recordings"/>
-                <label for="chkbox-media-recordings">Media Recordings</label> <br/>
-                <input type="checkbox"
-                       name="check-entry-options" id="chkbox-student-annotation"/>
-                <label for="chkbox-student-annotation">Student Annotation</label> <br/>
-                <input type="checkbox"
-                       name="check-entry-options" id="chkbox-file-uploads"/>
-                <label for="chkbox-file-uploads">File Uploads</label>
-            </p>
-
-            <p>
-                Submission Attempts<br/>
-                <select>
-                    <option>Unlimited</option>
-                </select>
-            </p>
-
-            <p>
-                Plagiarism Review<br/>
-                <select>
-                    <option>None</option>
-                </select>
-            </p>
-
-            <p>
-                <label>Group Assignment</label>
-                <br/>
-                <input type="checkbox"
-                       name="check-entry-options" id="chkbox-group-assignment"/>
-                <label for="chkbox-group-assignment">This is a group assignment</label> <br/>
-            </p>
-
-            <p>
-                <label>Peer Reviews</label>
-                <br/>
-                <input type="checkbox"
-                       name="check-entry-options" id="chkbox-peer-reviews"/>
-                <label for="chkbox-peer-reviews">Require Peer Reviews</label> <br/>
-            </p>
-
-            <p>
-                Assign To<br/>
-                <input type="text" value="Everyone"/>
-            </p>
-
-            <p>
-                Due<br/>
-                <input type="date" value="2021-01-01"/>
-            </p>
-
-            <p>
-                Available From<br/>
-                <input type="date" value="2021-01-01"/>
-            </p>
-
-            <p>
-                Until<br/>
-                <input type="date" value="2021-01-01"/>
-            </p>
-
-            <p>
-                <form action = "/kanbas/assignments/index.html">
-                    <button>Cancel</button>
-                    <button>Save</button>
-                </form>
-            </p>
+<hr/>
+<div>
+    <input type="checkbox" id="chkbox-notify-users"/>
+    <label for="chkbox-notify-users">Notify users that this content has changed</label>
+    <form action = "/kanbas/assignments/index.html">
+        <button class="btn btn-danger float-end">Save</button>
+        <button class="btn btn-secondary float-end">Cancel</button>
+    </form>
+</div>
 </body>
 </html>

@@ -7,6 +7,12 @@
     overflow-wrap: break-word;
 }
 
+.account_navigation_active a {
+    color: black;
+    border-left: 2px solid black;
+    padding-left: 8px;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -25,10 +31,4 @@ a:active {
 
 a {
     color: red;
-}
-
-.account_navigation_active a {
-    color: black;
-    border-left: 2px solid black;
-    padding-left: 8px;
 }

@@ -51,6 +51,10 @@ a:active {
     text-decoration: none;
 }
 
+a {
+    color: red;
+}
+
 .kanbas_navigation_link a {
     color: white;
 }
@@ -61,4 +65,19 @@ a:active {
 
 .btn-secondary {
     background-color: #D3D3D3;
+}
+
+.account_navigation {
+    text-align: left;
+    width: 190px;
+    background: white;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    overflow-wrap: break-word;
+}
+
+.account_navigation_active a {
+    color: black;
+    border-left: 2px solid black;
+    padding-left: 8px;
 }

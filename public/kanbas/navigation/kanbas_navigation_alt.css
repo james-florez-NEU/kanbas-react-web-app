@@ -1,0 +1,42 @@
+.kanbas_navigation {
+    background-color: white;
+    margin: 5px;
+    width: 85px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.kanbas_navigation_icon {
+    color: red;
+}
+
+.kanbas_navigation_icon_user {
+    color: #D3D3D3;
+}
+
+.kanbas_navigation_link {
+    padding: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a {
+    color: red;
+}

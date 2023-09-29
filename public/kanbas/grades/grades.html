@@ -3,264 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <title>Grades</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
+    <link href="grades.css" rel="stylesheet"/>
 </head>
 <body>
-<table border="0" width="100%">
-    <tbody>
-    <tr>
-        <td valign="top">
-            <ul>
-                <li>
-                    <a href="/kanbas/profile/index.html">Account</a>
-                </li>
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="/kanbas/home/home.html">Courses</a>
-                </li>
-                <li>
-                    <a href="#">Calendar</a>
-                </li>
-                <li>
-                    <a href="#">Inbox</a>
-                </li>
-                <li>
-                    <a href="#">Studio</a>
-                </li>
-                <li>
-                    <a href="#">History</a>
-                </li>
-                <li>
-                    <a href="#">Commons</a>
-                </li>
-                <li>
-                    <a href="#">Help</a>
-                </li>
-            </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li>
-                    <a href="/kanbas/home/home.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">Modules</a>
-                </li>
-                <li>
-                    <a href="#">Piazza</a>
-                </li>
-                <li>
-                    <a href="#">Zoom Meetings</a>
-                </li>
-                <li>
-                    <a href="/kanbas/assignments/index.html">Assignments</a>
-                </li>
-                <li>
-                    <a href="/kanbas/grades/grades.html">Grades</a>
-                </li>
-                <li>
-                    <a href="#">People</a>
-                </li>
-                <li>
-                    <a href="#">Panopto Video</a>
-                </li>
-                <li>
-                    <a href="#">Discussions</a>
-                </li>
-                <li>
-                    <a href="#">Announcements</a>
-                </li>
-                <li>
-                    <a href="#">Pages</a>
-                </li>
-                <li>
-                    <a href="#">Files</a>
-                </li>
-                <li>
-                    <a href="#">Rubrics</a>
-                </li>
-                <li>
-                    <a href="#">Outcomes</a>
-                </li>
-                <li>
-                    <a href="#">Collaborations</a>
-                </li>
-                <li>
-                    <a href="#">Syllabus</a>
-                </li>
-                <li>
-                    <a href="/kanbas/settings/course_details.html">Settings</a>
-                </li>
-            </ul>
-        </td>
-        <td valign="top">
-            <select>
-                <option>Gradebook</option>
-                <option>Gradebook 1</option>
-                <option>Gradebook 2</option>
-            </select>
-            <button>Import</button>
-            <select>
-                <option>Export</option>
-                <option>Export 1</option>
-                <option>Export 2</option>
-            </select>
-            <button>Configure</button>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">CS5610</a></li>
+        <li class="breadcrumb-item"><a href="#">12631</a></li>
+        <li class="breadcrumb-item"><a href="#">202410</a></li>
+        <li class="breadcrumb-item">></li>
+        <li class="breadcrumb-item active" aria-current="page">Grades</li>
+    </ol>
+</nav><br/><hr/>
 
-            <table width="100%">
-                <tr>
-                    <td>
-                        <h3>Student Names</h3>
-                        <input placeholder="Search Students"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>Assignment Names</h3>
-                        <input placeholder="Search Assignments"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>
-                            <button>Apply Filters</button>
-                        </p>
-                    </td>
-                </tr>
-            </table>
+<div>
+    <button class="btn btn-secondary float-end"><i class="fa fa-gear float-end" aria-hidden="true"></i></button>
 
-            <table width="100%" border="1">
-                <thead>
-                <tr>
-                    <th>Student Name</th>
-                    <th>A1 - HTML</th>
-                    <th>A2 - CSS</th>
-                    <th>A3 - JS</th>
-                    <th>A4 - PHP</th>
-                    <th>A5 - SQL</th>
-                    <th>A6 - React</th>
-                    <th>Q1</th>
-                    <th>Q2</th>
-                    <th>Q3</th>
-                    <th>Q4</th>
-                    <th>Q5</th>
-                    <th>Q6</th>
-                    <th>Exam 1</th>
-                    <th>Exam 2</th>
-                    <th>Exam 3</th>
-                    <th>Exam 4</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Alice</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="95"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="90"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="85"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Bob</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="75"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="35"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Elise</td>
-                    <td>
-                        <input type="number"
-                               value="100"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="82"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>James</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="47"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="92"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                </tr>
-                </tbody>
-            </table>
-        </td>
-    </tr>
-    </tbody>
-</table>
+    <div class="dropdown float-end">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-file-export"></i>
+            Export
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+
+    <button class="btn btn-secondary float-end">
+        <i class="fa-solid fa-file-import"></i>
+        Import
+    </button><br/>
+</div><br/>
+
+<div>
+    <div class="row">
+        <div class="col-6">
+            <h4>Student Names</h4>
+        </div>
+        <div class="col-6">
+            <h4>Assignment Names</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <input class="form-control" placeholder="Search Students"/>
+<!--            TODO: What type of search to use?-->
+<!--            <div class="dropdown">-->
+<!--                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--                    <i class="fa-regular fa-circle-check" style="color: green"></i>-->
+<!--                    Search Students-->
+<!--                </button>-->
+<!--                <ul class="dropdown-menu">-->
+<!--                    <li><a class="dropdown-item" href="#">Action</a></li>-->
+<!--                    <li><a class="dropdown-item" href="#">Another action</a></li>-->
+<!--                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+        </div>
+        <div class="col-6">
+            <input class="form-control" placeholder="Search Assignments"/>
+        </div>
+    </div>
+</div>
+
+<div>
+    <button class="btn btn-secondary">
+        <i class="fa-solid fa-filter"></i>
+        Apply Filters
+    </button>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>A1 - HTML</th>
+            <th>A2 - CSS</th>
+            <th>A3 - JS</th>
+            <th>A4 - PHP</th>
+            <th>A5 - SQL</th>
+            <th>A6 - React</th>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+            <th>Q5</th>
+            <th>Q6</th>
+            <th>Exam 1</th>
+            <th>Exam 2</th>
+            <th>Exam 3</th>
+            <th>Exam 4</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Alice</td>
+            <td>100</td>
+            <td>
+                <input type="number"
+                       value="95"/>
+            </td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>
+                <input type="number"
+                       value="90"/>
+            </td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>
+                <input type="number"
+                       value="85"/>
+            </td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>
+                <input type="number"
+                       value="75"/>
+            </td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>
+                <input type="number"
+                       value="35"/>
+            </td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Elise</td>
+            <td>
+                <input type="number"
+                       value="100"/>
+            </td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>
+                <input type="number"
+                       value="82"/>
+            </td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>
+                <input type="number"
+                       value="47"/>
+            </td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>
+                <input type="number"
+                       value="92"/>
+            </td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>

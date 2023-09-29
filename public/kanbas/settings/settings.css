@@ -21,3 +21,7 @@ a:active {
 a {
     color: red;
 }
+
+.nav-link {
+    color: red;
+}

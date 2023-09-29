@@ -38,3 +38,63 @@ a {
 .wd-fixed-top-margin {
     margin-top: 70px;
 }
+
+.kanbas_navigation {
+    background-color: black;
+    margin: 5px;
+    width: 85px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.kanbas_navigation_selected {
+    background-color: white;
+    margin: 5px;
+}
+
+.kanbas_navigation_icon {
+    color: red;
+}
+
+.kanbas_navigation_icon_user {
+    color: #D3D3D3;
+}
+
+.kanbas_navigation_link {
+    padding: 10px;
+}
+
+.kanbas_navigation_link_selected {
+    padding: 10px;
+}
+
+.kanbas_navigation img {
+    width: 100%; /* Make the image fill the width of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+.kanbas_navigation_link a {
+    color: white;
+}
+
+.kanbas_navigation_link_selected a {
+    color: red;
+}
+
+.course_navigation {
+    text-align: left;
+    width: 190px;
+    background: white;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    overflow-wrap: break-word;
+}
+
+.course_navigation_active a {
+    color: black;
+    border-left: 2px solid black;
+    padding-left: 8px;
+}

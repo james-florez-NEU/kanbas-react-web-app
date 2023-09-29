@@ -8,3 +8,7 @@
     background-color: #D3D3D3;
     color: black;
 }
+
+.form-control {
+    margin-bottom: 20px;
+}

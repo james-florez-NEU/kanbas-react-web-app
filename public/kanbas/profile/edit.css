@@ -1,0 +1,64 @@
+.kanbas_navigation {
+    background-color: black;
+    margin: 5px;
+    width: 85px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.kanbas_navigation_selected {
+    background-color: white;
+    margin: 5px;
+}
+
+.kanbas_navigation_icon {
+    color: red;
+}
+
+.kanbas_navigation_icon_user {
+    color: #D3D3D3;
+}
+
+.kanbas_navigation_link {
+    padding: 10px;
+}
+
+.kanbas_navigation_link_selected {
+    padding: 10px;
+}
+
+.kanbas_navigation img {
+    width: 100%; /* Make the image fill the width of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.kanbas_navigation_link a {
+    color: white;
+}
+
+.kanbas_navigation_link_selected a {
+    color: red;
+}
+
+.btn-secondary {
+    background-color: #D3D3D3;
+}

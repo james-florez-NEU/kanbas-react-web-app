@@ -1,0 +1,53 @@
+.course_navigation {
+    text-align: left;
+    width: 190px;
+    background: white;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    overflow-wrap: break-word;
+}
+
+.course_navigation_header {
+    background-color: black;
+    color: white;
+}
+
+.course_navigation_text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a {
+    color: red;
+}
+
+.course_navigation_active a {
+    color: black;
+    border-left: 2px solid black;
+    padding-left: 8px;
+}
+
+.btn-secondary {
+    background-color: black;
+    border: 2px solid white;
+    margin: 5px;
+}
+

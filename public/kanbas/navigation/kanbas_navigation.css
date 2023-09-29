@@ -9,16 +9,24 @@
     align-content: center;
 }
 
+.kanbas_navigation_selected {
+    background-color: white;
+    margin: 5px;
+}
+
 .kanbas_navigation_icon {
     color: red;
 }
 
-.kanbas_navigation_icon_selected {
-    color: white;
+.kanbas_navigation_icon_user {
+    color: #D3D3D3;
 }
 
 .kanbas_navigation_link {
-    color: white;
+    padding: 10px;
+}
+
+.kanbas_navigation_link_selected {
     padding: 10px;
 }
 
@@ -41,4 +49,12 @@ a:hover {
 
 a:active {
     text-decoration: none;
+}
+
+.kanbas_navigation_link a {
+    color: white;
+}
+
+.kanbas_navigation_link_selected a {
+    color: red;
 }

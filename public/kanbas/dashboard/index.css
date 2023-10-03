@@ -17,6 +17,10 @@
 
 .kanbas_navigation_selected {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
 .kanbas_navigation_icon {

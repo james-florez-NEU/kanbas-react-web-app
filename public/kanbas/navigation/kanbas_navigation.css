@@ -1,6 +1,5 @@
 .kanbas_navigation {
     background-color: black;
-    margin: 5px;
     width: 85px;
     position: relative;
     display: flex;
@@ -11,7 +10,6 @@
 
 .kanbas_navigation_selected {
     background-color: white;
-    margin: 5px;
 }
 
 .kanbas_navigation_icon {

@@ -8,44 +8,141 @@
     <link href="index.css" rel="stylesheet"/>
 </head>
 <body>
-<div>
+<div class = "kanbas_navigation">
+    <div>
+        <img src="/public/kanbas/assets/NU_RGB_Notched-N_motto_RW.png">
+    </div>
+    <div class=" kanbas_navigation kanbas_navigation_selected">
+        <div class = "kanbas_navigation_icon_user">
+            <i class="fa-solid fa-user fa-2x"></i>
+        </div>
+        <div class = "kanbas_navigation_link_selected">
+            <a href="/kanbas/profile/index.html">Account</a>
+        </div>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-solid fa-gauge fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="/kanbas/dashboard/index.html">Dashboard</a>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-solid fa-book fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="/kanbas/home/home.html">Courses</a>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-regular fa-calendar fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="#">Calendar</a>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-solid fa-inbox fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="#">Inbox</a>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-regular fa-clock fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="#">History</a>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-solid fa-desktop fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="#">Studio</a>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="#">Commons</a>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-regular fa-circle-question fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="#">Help</a>
+    </div>
+</div>
+
+<div class="header">
+    <i class="fa-solid fa-bars float-left"></i>
     <h4>James Florez's Profile</h4>
-    <hr/>
 </div>
 
-<div>
-    <form action="/kanbas/profile/edit.html">
-        <button class = "btn btn-secondary float-end">
-            <i class="fa-solid fa-pencil"></i>
-            Edit Profile
-        </button>
-    </form>
+<hr class="separator"/>
 
-    <i class="fa-solid fa-user fa-5x"></i>
-    <h2>James Florez</h2>
-    <h3>Contact</h3>
-    <p>No registered services, you can add some on the <a href="/kanbas/settings/course_details.html">settings</a> page.</p>
-    <h3>Biograpy</h3>
-    <p>M.S. in Computer Science, B.S. in Mechanical Engineering</p>
-    <h3>Links</h3>
-    <p>
-    <ul>
-        <li>
-            <i class="fa-solid fa-link float-left"></i>
-            <a href="#">LinkedIn</a>
-        </li>
-        <li>
-            <i class="fa-solid fa-link float-left"></i>
-            <a href="#">GitHub</a>
-        </li>
-        <li>
-            <i class="fa-solid fa-link float-left"></i>
-            <a href="https://www.youtube.com/@WebDevTV">YouTube</a>
-        </li>
-    </ul>
-    </p>
+<div class="nav_and_main_content">
+    <div class = "account_navigation">
+        <div>
+            <a href="#">Notifications</a>
+        </div>
+        <div class = "account_navigation_active">
+            <a href="/kanbas/profile/index.html">Profile</a>
+        </div>
+        <div>
+            <a href="#">Files</a>
+        </div>
+        <div>
+            <a href="#">Settings</a>
+        </div>
+        <div>
+            <a href="#">ePortfolios</a>
+        </div>
+        <div>
+            <a href="#">Shared Content</a>
+        </div>
+        <div>
+            <a href="#">The Hub</a>
+        </div>
+        <div>
+            <a href="#">Qwickly Course Tools</a>
+        </div>
+        <div>
+            <a href="#">Global Announcements</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div>
+            <form action="/kanbas/profile/edit.html">
+                <button class = "btn btn-secondary float-end">
+                    <i class="fa-solid fa-pencil"></i>
+                    Edit Profile
+                </button>
+            </form>
+
+            <i class="fa-solid fa-user fa-5x"></i>
+            <h2>James Florez</h2>
+            <h3>Contact</h3>
+            <p>No registered services, you can add some on the <a href="/kanbas/settings/course_details.html">settings</a> page.</p>
+            <h3>Biograpy</h3>
+            <p>M.S. in Computer Science, B.S. in Mechanical Engineering</p>
+            <h3>Links</h3>
+            <p>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-link float-left"></i>
+                    <a href="#">LinkedIn</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-link float-left"></i>
+                    <a href="#">GitHub</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-link float-left"></i>
+                    <a href="https://www.youtube.com/@WebDevTV">YouTube</a>
+                </li>
+            </ul>
+            </p>
+        </div>
+    </div>
 </div>
-
 
 </body>
 </html>

@@ -1,17 +1,17 @@
 .kanbas_navigation {
     background-color: black;
-    margin: 5px;
     width: 85px;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .kanbas_navigation_selected {
     background-color: white;
-    margin: 5px;
 }
 
 .kanbas_navigation_icon {
@@ -72,7 +72,6 @@ a {
     width: 190px;
     background: white;
     padding-left: 20px;
-    margin-bottom: 15px;
     overflow-wrap: break-word;
 }
 
@@ -80,4 +79,30 @@ a {
     color: black;
     border-left: 2px solid black;
     padding-left: 8px;
+}
+
+.fa-bars {
+    color: red;
+    padding-right: 10px;
+}
+
+.main-content {
+    padding: 20px;
+    flex-grow: 2;
+}
+
+.header {
+    margin-left: 85px;
+    height: 30px;
+    display: flex;
+}
+
+.nav_and_main_content {
+    margin-left: 85px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.separator {
+    margin-left: 85px;
 }

@@ -8,133 +8,264 @@
     <link href="edit.css" rel="stylesheet"/>
 </head>
 <body>
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">CS5610</a></li>
-        <li class="breadcrumb-item"><a href="#">12631</a></li>
-        <li class="breadcrumb-item"><a href="#">202410</a></li>
-        <li class="breadcrumb-item">></li>
-        <li class="breadcrumb-item"><a href="/public/kanbas/assignments/index.html">Assignments</a></li>
-        <li class="breadcrumb-item">></li>
-        <li class="breadcrumb-item active" aria-current="page">A1 - ENV</li>
-    </ol>
-</nav><br/><hr/>
-
-<div>
-    <button class="btn btn-secondary float-end"><i class="fa fa-ellipsis-v float-left" aria-hidden="true"></i></button>
-    <button class="btn btn-success float-end">
-        <i class="fa fa-check-circle" aria-hidden="true"></i>
-        Published
-    </button>
-    <br/><hr/>
+<div class = "kanbas_navigation">
+    <div>
+        <img src="/public/kanbas/assets/NU_RGB_Notched-N_motto_RW.png">
+    </div>
+    <div class = "kanbas_navigation_icon_user">
+        <i class="fa-solid fa-user fa-2x"></i>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="/kanbas/profile/index.html">Account</a>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-solid fa-gauge fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="/kanbas/dashboard/index.html">Dashboard</a>
+    </div>
+    <div class="kanbas_navigation_selected">
+        <div class = "kanbas_navigation_icon">
+            <i class="fa-solid fa-book fa-2x" style="color: red; margin: 5px"></i><br/>
+        </div>
+        <div class = "kanbas_navigation_link_selected">
+            <a href="/kanbas/home/home.html">Courses</a>
+        </div>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-regular fa-calendar fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="#">Calendar</a>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-solid fa-inbox fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="#">Inbox</a>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-regular fa-clock fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="#">History</a>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-solid fa-desktop fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="#">Studio</a>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="#">Commons</a>
+    </div>
+    <div class = "kanbas_navigation_icon">
+        <i class="fa-regular fa-circle-question fa-2x"></i><br/>
+    </div>
+    <div class = "kanbas_navigation_link">
+        <a href="#">Help</a>
+    </div>
 </div>
 
-<div>
-    <label for="assignment_name">Assignment Name</label><br/>
-    <input type="text" id="assignment_name" class="form-control" value="A1 - ENV + HTML">
-    <textarea cols="30" rows="4" class="form-control">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.</textarea>
+<div class="header">
+    <i class="fa-solid fa-bars float-left"></i>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">CS5610</a></li>
+            <li class="breadcrumb-item"><a href="#">12631</a></li>
+            <li class="breadcrumb-item"><a href="#">202410</a></li>
+            <li class="breadcrumb-item">></li>
+            <li class="breadcrumb-item"><a href="/public/kanbas/assignments/index.html">Assignments</a></li>
+            <li class="breadcrumb-item">></li>
+            <li class="breadcrumb-item active" aria-current="page">A1 - ENV</li>
+        </ol>
+    </nav>
 </div>
 
-<div>
-    <div class="row">
-        <div class="col-3">
-            Points
+<hr class="separator"/>
+
+<div class="nav_and_main_content">
+    <div class = "course_navigation">
+        <div>
+            <a href="/kanbas/home/home.html">Home</a>
         </div>
-        <div class="col-9">
-            <input type="number" class="form-control" value="100"/>
+        <div>
+            <a href="#">Modules</a>
+        </div>
+        <div>
+            <a href="#">Piazza</a>
+        </div>
+        <div>
+            <a href="#">Zoom Meetings</a>
+        </div>
+        <div class = "course_navigation_active">
+            <a href="/kanbas/assignments/index.html">Assignments</a>
+        </div>
+        <div>
+            <a href="#">Quizzes</a>
+        </div>
+        <div>
+            <a href="/kanbas/grades/grades.html">Grades</a>
+        </div>
+        <div>
+            <a href="#">People</a>
+        </div>
+        <div>
+            <a href="#">Panopto Video</a>
+        </div>
+        <div>
+            <a href="#">Discussions</a>
+        </div>
+        <div>
+            <a href="#">Announcements</a>
+        </div>
+        <div>
+            <a href="#">Pages</a>
+        </div>
+        <div>
+            <a href="#">Files</a>
+        </div>
+        <div>
+            <a href="#">Rubrics</a>
+        </div>
+        <div>
+            <a href="#">Outcomes</a>
+        </div>
+        <div>
+            <a href="#">Collaborations</a>
+        </div>
+        <div>
+            <a href="#">Syllabus</a>
+        </div>
+        <div>
+            <a href="#">Progress Reports (EAB Navigate)</a>
+        </div>
+        <div>
+            <a href="/kanbas/settings/course_details.html">Settings</a>
         </div>
     </div>
-    <div class="row">
-        <div class="col-3">
-            Assignment Group
+
+    <div class="main-content">
+        <div>
+            <button class="btn btn-secondary float-end"><i class="fa fa-ellipsis-v float-left" aria-hidden="true"></i></button>
+            <button class="btn btn-success float-end">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                Published
+            </button>
+            <br/><hr/>
         </div>
-        <div class="col-9">
-            <select class="form-control">
-                <option>ASSIGNMENTS</option>
-            </select>
+
+        <div>
+            <label for="assignment_name">Assignment Name</label><br/>
+            <input type="text" id="assignment_name" class="form-control" value="A1 - ENV + HTML">
+            <textarea cols="30" rows="4" class="form-control">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.</textarea>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-3">
-            Display Grade as
-        </div>
-        <div class="col-9">
-            <select class="form-control">
-                <option>Percentage</option>
-            </select>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3"></div>
-        <div class="col-9">
-            <input type="checkbox" class="form-check-input" id="chkbox-final-grade"/>
-            <label for="chkbox-final-grade">Do not count this assignment towards the final grade</label>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3">
-            Submission Type
-        </div>
-        <div class="col-9">
-            <div class="form-control">
-                <select class="form-control">
-                    <option>Online</option>
-                </select>
-                <label><h6>Online Entry Options</h6></label>
-                <br/>
-                <input type="checkbox" class="form-check-input" name="check-entry-options" id="chkbox-text-entry" checked/>
-                <label for="chkbox-text-entry">Text Entry</label> <br/>
-                <input type="checkbox" class="form-check-input" name="check-entry-options" id="chkbox-website-url" checked/>
-                <label for="chkbox-website-url">Website URL</label> <br/>
-                <input type="checkbox" class="form-check-input" name="check-entry-options" id="chkbox-media-recordings" checked/>
-                <label for="chkbox-media-recordings">Media Recordings</label> <br/>
-                <input type="checkbox" class="form-check-input" name="check-entry-options" id="chkbox-student-annotation"/>
-                <label for="chkbox-student-annotation">Student Annotation</label> <br/>
-                <input type="checkbox" class="form-check-input" name="check-entry-options" id="chkbox-file-uploads"/>
-                <label for="chkbox-file-uploads">File Uploads</label>
+
+        <div>
+            <div class="row">
+                <div class="col-3">
+                    Points
+                </div>
+                <div class="col-9">
+                    <input type="number" class="form-control" value="100"/>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3">
-            Assign
-        </div>
-        <div class="col-9">
-            <div class="form-control">
-                <label for="assign-to"><h6>Assign To</h6></label>
-                <select class="form-control" id="assign-to">
-                    <option>Everyone</option>
-                </select>
-                <label for="due-date"><h6>Due</h6></label>
-                <input type="date" class="form-control" id="due-date" value="2023-09-23"/>
-                <div class="row">
-                    <div class="col-6">
-                        <label for="available-from"><h6>Available From</h6></label>
-                        <input type="date" class="form-control" id="available-from" value="2023-09-06"/>
-                    </div>
-                    <div class="col-6">
-                        <label for="until"><h6>Until</h6></label>
-                        <input type="date" class="form-control" id="until"/>
+            <div class="row">
+                <div class="col-3">
+                    Assignment Group
+                </div>
+                <div class="col-9">
+                    <select class="form-control">
+                        <option>ASSIGNMENTS</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    Display Grade as
+                </div>
+                <div class="col-9">
+                    <select class="form-control">
+                        <option>Percentage</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-9">
+                    <input type="checkbox" class="form-check-input" id="chkbox-final-grade"/>
+                    <label for="chkbox-final-grade">Do not count this assignment towards the final grade</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    Submission Type
+                </div>
+                <div class="col-9">
+                    <div class="form-control">
+                        <select class="form-control">
+                            <option>Online</option>
+                        </select>
+                        <label><h6>Online Entry Options</h6></label>
+                        <br/>
+                        <input type="checkbox" class="form-check-input" name="check-entry-options" id="chkbox-text-entry" checked/>
+                        <label for="chkbox-text-entry">Text Entry</label> <br/>
+                        <input type="checkbox" class="form-check-input" name="check-entry-options" id="chkbox-website-url" checked/>
+                        <label for="chkbox-website-url">Website URL</label> <br/>
+                        <input type="checkbox" class="form-check-input" name="check-entry-options" id="chkbox-media-recordings" checked/>
+                        <label for="chkbox-media-recordings">Media Recordings</label> <br/>
+                        <input type="checkbox" class="form-check-input" name="check-entry-options" id="chkbox-student-annotation"/>
+                        <label for="chkbox-student-annotation">Student Annotation</label> <br/>
+                        <input type="checkbox" class="form-check-input" name="check-entry-options" id="chkbox-file-uploads"/>
+                        <label for="chkbox-file-uploads">File Uploads</label>
                     </div>
                 </div>
-                <button class="btn btn-secondary form-control">
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                    Add
-                </button>
             </div>
+            <div class="row">
+                <div class="col-3">
+                    Assign
+                </div>
+                <div class="col-9">
+                    <div class="form-control">
+                        <label for="assign-to"><h6>Assign To</h6></label>
+                        <select class="form-control" id="assign-to">
+                            <option>Everyone</option>
+                        </select>
+                        <label for="due-date"><h6>Due</h6></label>
+                        <input type="date" class="form-control" id="due-date" value="2023-09-23"/>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="available-from"><h6>Available From</h6></label>
+                                <input type="date" class="form-control" id="available-from" value="2023-09-06"/>
+                            </div>
+                            <div class="col-6">
+                                <label for="until"><h6>Until</h6></label>
+                                <input type="date" class="form-control" id="until"/>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary form-control">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr/>
+        <div>
+            <input type="checkbox" class="form-check-input" id="chkbox-notify-users"/>
+            <label for="chkbox-notify-users">Notify users that this content has changed</label>
+            <form action = "/public/kanbas/assignments/index.html">
+                <button class="btn btn-danger float-end">Save</button>
+                <button class="btn btn-secondary float-end">Cancel</button>
+            </form>
         </div>
     </div>
-
-</div>
-
-<hr/>
-<div>
-    <input type="checkbox" class="form-check-input" id="chkbox-notify-users"/>
-    <label for="chkbox-notify-users">Notify users that this content has changed</label>
-    <form action = "/public/kanbas/assignments/index.html">
-        <button class="btn btn-danger float-end">Save</button>
-        <button class="btn btn-secondary float-end">Cancel</button>
-    </form>
 </div>
 </body>
 </html>

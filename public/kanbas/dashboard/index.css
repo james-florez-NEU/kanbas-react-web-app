@@ -72,3 +72,7 @@ a:active {
     margin-left: 85px;
     padding-left: 20px;
 }
+
+.card-content a {
+    color: black;
+}

@@ -104,6 +104,10 @@ a {
     padding-right: 10px;
 }
 
+.fa-chevron-down {
+    color: white;
+}
+
 .header {
     margin-left: 85px;
     height: 30px;
@@ -123,4 +127,16 @@ a {
 
 .home-center-screen {
     flex-grow: 2;
+}
+
+.course_navigation_header {
+    background-color: black;
+    color: white;
+}
+
+.course_navigation_text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }

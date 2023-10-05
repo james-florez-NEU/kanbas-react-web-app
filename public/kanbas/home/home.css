@@ -125,9 +125,7 @@ a {
     margin-left: 85px;
 }
 
-.home-center-screen {
-    flex-grow: 2;
-}
+
 
 .course_navigation_header {
     background-color: black;
@@ -139,4 +137,25 @@ a {
     flex-direction: column;
     align-content: center;
     align-items: center;
+}
+
+.white-bars {
+    color: white;
+}
+
+.large_nav_and_main_content {
+    display: flex;
+}
+
+.home-center-screen {
+    flex-grow: 2;
+}
+
+.home-center-screen-small {
+    flex-grow: 2;
+    margin-left: 0;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
 }

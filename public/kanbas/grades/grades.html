@@ -180,18 +180,6 @@
             <div class="row">
                 <div class="col-6">
                     <input class="form-control" placeholder="Search Students"/>
-                    <!--            TODO: What type of search to use? Add the search icon-->
-                    <!--            <div class="dropdown">-->
-                    <!--                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">-->
-                    <!--                    <i class="fa-regular fa-circle-check" style="color: green"></i>-->
-                    <!--                    Search Students-->
-                    <!--                </button>-->
-                    <!--                <ul class="dropdown-menu">-->
-                    <!--                    <li><a class="dropdown-item" href="#">Action</a></li>-->
-                    <!--                    <li><a class="dropdown-item" href="#">Another action</a></li>-->
-                    <!--                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-                    <!--                </ul>-->
-                    <!--            </div>-->
                 </div>
                 <div class="col-6">
                     <input class="form-control" placeholder="Search Assignments"/>
@@ -206,136 +194,139 @@
             </button>
         </div>
 
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th>Student Name</th>
-                    <th>A1 - HTML</th>
-                    <th>A2 - CSS</th>
-                    <th>A3 - JS</th>
-                    <th>A4 - PHP</th>
-                    <th>A5 - SQL</th>
-                    <th>A6 - React</th>
-                    <th>Q1</th>
-                    <th>Q2</th>
-                    <th>Q3</th>
-                    <th>Q4</th>
-                    <th>Q5</th>
-                    <th>Q6</th>
-                    <th>Exam 1</th>
-                    <th>Exam 2</th>
-                    <th>Exam 3</th>
-                    <th>Exam 4</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Alice</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="95"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="90"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="85"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Bob</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="75"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="35"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Elise</td>
-                    <td>
-                        <input type="number"
-                               value="100"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="82"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>James</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="47"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>
-                        <input type="number"
-                               value="92"/>
-                    </td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                </tr>
-                </tbody>
-            </table>
+        <div class="custom-table">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>A1 - HTML</th>
+                        <th>A2 - CSS</th>
+                        <th>A3 - JS</th>
+                        <th>A4 - PHP</th>
+                        <th>A5 - SQL</th>
+                        <th>A6 - React</th>
+                        <th>Q1</th>
+                        <th>Q2</th>
+                        <th>Q3</th>
+                        <th>Q4</th>
+                        <th>Q5</th>
+                        <th>Q6</th>
+                        <th>Exam 1</th>
+                        <th>Exam 2</th>
+                        <th>Exam 3</th>
+                        <th>Exam 4</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Alice</td>
+                        <td>100</td>
+                        <td>
+                            <input type="number"
+                                   value="95"/>
+                        </td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>
+                            <input type="number"
+                                   value="90"/>
+                        </td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>
+                            <input type="number"
+                                   value="85"/>
+                        </td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>
+                            <input type="number"
+                                   value="75"/>
+                        </td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>
+                            <input type="number"
+                                   value="35"/>
+                        </td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Elise</td>
+                        <td>
+                            <input type="number"
+                                   value="100"/>
+                        </td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>
+                            <input type="number"
+                                   value="82"/>
+                        </td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>James</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>
+                            <input type="number"
+                                   value="47"/>
+                        </td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>
+                            <input type="number"
+                                   value="92"/>
+                        </td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
+
     </div>
 </div>
 </body>

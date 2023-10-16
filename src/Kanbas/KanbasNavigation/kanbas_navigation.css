@@ -1,0 +1,45 @@
+.kanbas_navigation {
+    background-color: black;
+    width: 85px;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.kanbas_navigation_item {
+    background-color: black;
+    color: white;
+    border: 0;
+}
+
+.list-group-item {
+    padding: 0;
+}
+
+.list-group-item.active {
+    background-color: white;
+    color: red;
+}
+
+/*.kanbas_navigation_icon {*/
+/*    color: red;*/
+/*}*/
+
+/*.kanbas_navigation_icon_user {*/
+/*    color: #D3D3D3;*/
+/*}*/
+
+/*.kanbas_navigation_link {*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.kanbas_navigation_link_selected {*/
+/*    padding: 10px;*/
+/*}*/
+
+.kanbas_navigation img {
+    width: 100%; /* Make the image fill the width of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+}

@@ -1,0 +1,74 @@
+.indented-list-item {
+    padding-left: 50px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a {
+    color: red;
+}
+
+.fa-check-circle {
+    color: green;
+}
+
+.btn-primary {
+    background-color: mediumseagreen;
+}
+
+.btn-secondary {
+    background-color: #D3D3D3;
+    color: black;
+}
+
+.fa-bars {
+    color: red;
+    margin-right: 10px;
+}
+
+.fa-chevron-down {
+    color: white;
+}
+
+.header {
+    height: 30px;
+    display: flex;
+    padding-left: 10px;
+}
+
+.nav_and_main_content {
+    margin-left: 85px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.large_nav_and_main_content {
+    display: flex;
+}
+
+.home-center-screen {
+    flex-grow: 2;
+}
+
+.home-center-screen-small {
+    flex-grow: 2;
+    margin-left: 0;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}

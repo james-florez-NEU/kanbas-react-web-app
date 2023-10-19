@@ -11,20 +11,7 @@ function Assignments() {
         (assignment) => assignment.course === courseId);
     return (
         <div className="assignments">
-            <div>
-                <input type="text" className="form-control w-50" id="search-for-assignment" placeholder="Search for Assignment"></input>
-                <button className="btn btn-secondary float-end"><FaEllipsisV/></button>
-                <button className="btn btn-danger float-end">
-                    <FaPlus/>
-                    Assignment
-                </button>
-                <button className="btn btn-secondary float-end">
-                    <FaPlus/>
-                    Group
-                </button>
-                <br/>
-                <hr/>
-            </div>
+
 
             <div className="list-group">
                 <li className="list-group-item-secondary">
@@ -33,9 +20,7 @@ function Assignments() {
                     <FaEllipsisV className="float-end"/>
                     <FaPlus className="float-end"/>
                     <button className="btn btn-secondary float-end rounded-pill">40% of Total</button>
-                    <div>
-                        <h5>ASSIGNMENTS</h5>
-                    </div>
+                    <h5>ASSIGNMENTS</h5>
                 </li>
 
                 {courseAssignments.map((assignment) => (

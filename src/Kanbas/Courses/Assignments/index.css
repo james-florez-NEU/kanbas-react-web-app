@@ -29,13 +29,18 @@
     color: green;
 }
 
-.assignments.list-group-item {
+.assignments .list-group-item {
     border-left: 6px solid green;
     border-radius: 0;
 }
 
+.assignments .list-group-item-secondary {
+    background-color: lightgray;
+}
+
 .list-group {
     border-radius: 0;
+    list-style: none;
 }
 
 .badge-secondary {

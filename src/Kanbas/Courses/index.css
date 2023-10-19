@@ -37,7 +37,6 @@ a {
 
 .fa-bars {
     color: red;
-    margin-right: 10px;
 }
 
 .fa-chevron-down {
@@ -48,16 +47,7 @@ a {
     height: 30px;
     display: flex;
     padding-left: 10px;
-}
-
-.nav_and_main_content {
-    margin-left: 85px;
-    margin-top: 30px;
-    display: flex;
-}
-
-.large_nav_and_main_content {
-    display: flex;
+    width: 100%;
 }
 
 .home-center-screen {
@@ -71,4 +61,8 @@ a {
 
 .flex-grow-2 {
     flex-grow: 2;
+}
+
+.flex-container {
+    display: flex;
 }

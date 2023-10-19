@@ -15,7 +15,7 @@ function Dashboard() {
 
             <div className="d-flex flex-row flex-wrap card-content">
                 {courses.map((course) => (
-                    <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div>
                         <Link key={course._id} to={`/Kanbas/Courses/${course._id}`}>
                             <div className="card">
                                 <img src="/kanbas/assets/NU_RGB_Notched-N_motto_RW.png"

@@ -4,10 +4,10 @@ import "./index.css"
 
 function Home() {
     return (
-        <div>
-            <ModuleList />
+        <div className="flex-container">
+            <ModuleList className="flex-grow-2"/>
 
-            <div className="d-none d-xl-block ps-3">
+            <div className="home-right-column ms-3">
                 <div>
                     <button className="btn btn-secondary">Import Existing Content</button>
                 </div>

@@ -6,8 +6,7 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
-import { FaGlasses } from "react-icons/fa";
-import { FaRegCheckCircle, FaEllipsisV, FaPlus, FaBars } from "react-icons/fa";
+import { FaRegCheckCircle, FaEllipsisV, FaPlus, FaBars, FaGlasses } from "react-icons/fa";
 import "./index.css";
 
 

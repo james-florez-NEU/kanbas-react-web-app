@@ -17,16 +17,16 @@ function AssignmentEditor() {
     };
     return (
         <div>
-            <h2>Assignment Name</h2>
+            Assignment Name
             <input value={assignment.title}
                    className="form-control mb-2" />
-            <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-                  className="btn btn-danger">
-                Cancel
-            </Link>
-            <button onClick={handleSave} className="btn btn-success me-2">
+            <button onClick={handleSave} className="btn btn-danger me-2 float-end">
                 Save
             </button>
+            <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
+                  className="btn btn-secondary float-end">
+                Cancel
+            </Link>
         </div>
     );
 }

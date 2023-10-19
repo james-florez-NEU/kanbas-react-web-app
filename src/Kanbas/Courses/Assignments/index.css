@@ -1,0 +1,58 @@
+.fa-check-circle {
+    color: green;
+    margin: 20px;
+}
+
+.fa-book {
+    margin: 20px;
+}
+
+.fa-caret-down {
+    margin: 20px;
+}
+
+.fa-ellipsis-v {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rounded-pill {
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    background-color: #D3D3D3;
+    color: black;
+}
+
+.fa-book {
+    color: green;
+}
+
+.assignments.list-group-item {
+    border-left: 6px solid green;
+    border-radius: 0;
+}
+
+.list-group {
+    border-radius: 0;
+}
+
+.badge-secondary {
+    border: 1px;
+    border-color: black;
+}
+
+.fa-bars {
+    color: red;
+    padding-right: 10px;
+}
+
+.assignments a {
+    color:black
+}
+
+.green {
+    color: green;
+}
+

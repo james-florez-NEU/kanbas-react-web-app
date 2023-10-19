@@ -1,5 +1,6 @@
 import ModuleList from "../Modules/ModuleList";
-
+import {FaCalendar} from "react-icons/fa";
+import "./index.css"
 
 function Home() {
     return (
@@ -39,24 +40,24 @@ function Home() {
 
                 <h4>Coming Up</h4>
                 <a href="#" className="float-end">View Calendar</a>
-                <i className="fa-regular fa-calendar float-end"></i>
+                <FaCalendar className="float-end"/>
                 <br/><hr/>
 
                 <ul className="list-group">
                     <li className="list-group-item">
-                        <i className="fa-regular fa-calendar"></i>
+                        <FaCalendar/>
                         <a href="#">Lecture</a><br/>
                         CS4550.12631.202410<br/>
                         Sep 7 at 11:45am
                     </li>
                     <li className="list-group-item">
-                        <i className="fa-regular fa-calendar"></i>
+                        <FaCalendar/>
                         <a href="#">Lecture</a><br/>
                         CS4550.12631.202410<br/>
                         Sep 11 at 11:45am
                     </li>
                     <li className="list-group-item">
-                        <i className="fa-regular fa-calendar"></i>
+                        <FaCalendar/>
                         <a href="#">CS5610 SP23 Lecture</a><br/>
                         CS5610.12631.202410<br/>
                         Sep 11 at 6pm

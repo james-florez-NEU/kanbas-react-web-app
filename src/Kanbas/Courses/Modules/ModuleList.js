@@ -7,6 +7,7 @@ import {
     updateModule,
     setModule,
 } from "./modulesReducer";
+import "./index.css";
 
 function ModuleList() {
     const { courseId } = useParams();
@@ -18,17 +19,18 @@ function ModuleList() {
         <ul className="list-group">
             <li className="list-group-item">
                 <button
-                    className="btn btn-secondary float-end"
-                    onClick={() => dispatch(updateModule(module))}>
-                    Update
-                </button>
-                <button
-                    className="btn btn-success float-end"
+                    className="btn btn-success float-end me-2 ms-2"
                     onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
                     Add
                 </button>
+                <button
+                    className="btn btn-dark float-end"
+                    onClick={() => dispatch(updateModule(module))}>
+                    Update
+                </button>
                 <input value={module.name}
                        onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}/>
+                <br/>
                 <textarea value={module.description}
                           onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))}/>
             </li>
@@ -38,7 +40,7 @@ function ModuleList() {
                     .map((module, index) => (
                         <li key={index} className="list-group-item">
                             <button
-                                className ="btn btn-success float-end"
+                                className ="btn btn-success float-end me-2 ms-2"
                                 onClick={() => dispatch(setModule(module))}>
                                 Edit
                             </button>

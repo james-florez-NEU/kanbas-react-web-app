@@ -21,6 +21,7 @@
     background-color: black;
     color: white;
     border: 0;
+    padding-bottom: 5px;
 }
 
 .kanbas_navigation img {
@@ -31,6 +32,7 @@
 .kanbas_navigation_icon {
     color: red;
     font-size: 2em;
+    padding-top: 5px;
 }
 
 .kanbas_navigation_icon_user {

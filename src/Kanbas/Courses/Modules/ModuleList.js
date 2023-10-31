@@ -16,7 +16,7 @@ function ModuleList() {
     const dispatch = useDispatch();
 
     return (
-        <ul className="list-group">
+        <ul className="list-group flex-grow-2">
             <li className="list-group-item">
                 <button
                     className="btn btn-success float-end me-2 ms-2"

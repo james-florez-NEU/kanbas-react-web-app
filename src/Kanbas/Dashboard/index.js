@@ -1,9 +1,37 @@
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import db from "../Database";
 import "./index.css";
 import {FaPenSquare} from "react-icons/fa";
 function Dashboard() {
-    const courses = db.courses;
+    const [courses, setCourses] = useState(db.courses);
+    const [course, setCourse] = useState({
+        name: "New Course",      number: "New Number",
+        startDate: "2023-09-10", endDate: "2023-12-15",
+    });
+
+    const addNewCourse = () => {
+        setCourses([...courses,
+            { ...course,
+                _id: new Date().getTime() }]);
+    };
+
+    const deleteCourse = (courseId) => {
+        setCourses(courses.filter((course) => course._id !== courseId));
+    };
+
+    const updateCourse = () => {
+        setCourses(
+            courses.map((c) => {
+                if (c._id === course._id) {
+                    return course;
+                } else {
+                    return c;
+                }
+            })
+        );
+    };
+
     return (
         <div className="main-content">
             <div>
@@ -13,25 +41,48 @@ function Dashboard() {
                 <hr/>
             </div>
 
-            <div className="d-flex flex-row flex-wrap card-content">
+            <div className="mb-3">
+                <h5>Course</h5>
+                <input value={course.name} className="form-control"
+                       onChange={(e) => setCourse({ ...course, name: e.target.value }) }/>
+                <input value={course.number} className="form-control"
+                       onChange={(e) => setCourse({ ...course, number: e.target.value }) }/>
+                <input value={course.startDate} className="form-control" type="date"
+                       onChange={(e) => setCourse({ ...course, startDate: e.target.value }) }/>
+                <input value={course.endDate} className="form-control" type="date"
+                       onChange={(e) => setCourse({ ...course, endDate: e.target.value }) }/>
+                <button onClick={addNewCourse} className="btn btn-success float-end">
+                    Add
+                </button>
+                <button onClick={updateCourse} className="btn btn-secondary float-end">
+                    Update
+                </button>
+            </div>
+
+            <div className="list-group">
                 {courses.map((course) => (
-                    <div>
-                        <Link key={course._id} to={`/Kanbas/Courses/${course._id}`}>
-                            <div className="card">
-                                <img src="/kanbas/assets/NU_RGB_Notched-N_motto_RW.png"
-                                     className="card-img-top" alt="..."></img>
-                                <div className="card-body">
-                                    <h5 className="card-title">{course.name}</h5>
-                                    <p className="card-text">
-                                        {course.number}<br/>
-                                        Fall 2023 Semester Full Term</p>
-                                    <FaPenSquare/>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
+                    <Link key={course._id}
+                        to={`/Kanbas/Courses/${course._id}`}
+                        className="list-group-item">
+                        <button className="btn btn-danger float-end"
+                            onClick={(event) => {
+                                event.preventDefault();
+                                deleteCourse(course._id);
+                            }}>
+                            Delete
+                        </button>
+                        <button className="btn btn-warning float-end"
+                                onClick={(event) => {
+                                    event.preventDefault();
+                                    setCourse(course);
+                                }}>
+                            Edit
+                        </button>
+                        {course.name}
+                    </Link>
                 ))}
             </div>
+
 
         </div>
     );

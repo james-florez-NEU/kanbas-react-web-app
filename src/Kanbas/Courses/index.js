@@ -10,9 +10,9 @@ import { FaRegCheckCircle, FaEllipsisV, FaPlus, FaBars, FaGlasses } from "react-
 import "./index.css";
 
 
-function Courses() {
+function Courses({courses}) {
     const { courseId } = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
+    const course = courses.find((course) => course._id === courseId);
     return (
         <div>
 

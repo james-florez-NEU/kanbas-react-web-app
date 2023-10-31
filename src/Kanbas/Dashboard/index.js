@@ -12,12 +12,11 @@ function Dashboard(
             <div>
                 <h1>Dashboard</h1>
                 <hr/>
-                <h2>Published Courses (3)</h2>
+                <h2>Published Courses</h2>
                 <hr/>
             </div>
 
-            <div className="mb-3">
-                <h5>Course</h5>
+            <div className="mb-3 flex-container">
                 <input value={course.name} className="form-control"
                        onChange={(e) => setCourse({ ...course, name: e.target.value }) }/>
                 <input value={course.number} className="form-control"
@@ -26,10 +25,10 @@ function Dashboard(
                        onChange={(e) => setCourse({ ...course, startDate: e.target.value }) }/>
                 <input value={course.endDate} className="form-control" type="date"
                        onChange={(e) => setCourse({ ...course, endDate: e.target.value }) }/>
-                <button onClick={addNewCourse} className="btn btn-success float-end">
+                <button onClick={addNewCourse} className="btn btn-success float-end ms-2">
                     Add
                 </button>
-                <button onClick={updateCourse} className="btn btn-secondary float-end">
+                <button onClick={updateCourse} className="btn btn-secondary float-end ms-2 me-2">
                     Update
                 </button>
             </div>
@@ -39,14 +38,14 @@ function Dashboard(
                     <Link key={course._id}
                         to={`/Kanbas/Courses/${course._id}`}
                         className="list-group-item">
-                        <button className="btn btn-danger float-end"
+                        <button className="btn btn-danger float-end ms-2 me-2"
                             onClick={(event) => {
                                 event.preventDefault();
                                 deleteCourse(course._id);
                             }}>
                             Delete
                         </button>
-                        <button className="btn btn-warning float-end"
+                        <button className="btn btn-warning float-end ms-2"
                                 onClick={(event) => {
                                     event.preventDefault();
                                     setCourse(course);

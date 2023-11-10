@@ -1,3 +1,4 @@
+import EncodingParametersInURLs from "./EncodingParametersInURLs";
 function Assignment5() {
     return (
         <div>
@@ -8,7 +9,8 @@ function Assignment5() {
                     Welcome
                 </a>
             </div>
-            {/*<SimpleAPIExamples />*/}
+            <h2>Simple API Examples</h2>
+            <EncodingParametersInURLs/>
         </div>
     );
 }

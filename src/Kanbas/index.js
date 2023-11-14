@@ -17,6 +17,22 @@ function Kanbas() {
     });
     const URL = "http://localhost:4000/api/courses";
 
+    const updateCourse = async () => {
+        const response = await axios.put(
+            `${URL}/${course._id}`,
+            course
+        );
+        setCourses(
+            courses.map((c) => {
+                if (c._id === course._id) {
+                    return response.data;
+                } else {
+                    return c;
+                }
+            })
+        );
+        setCourse({ name: "" });
+    };
     const deleteCourse = async (course) => {
         const response = await axios.delete(
             `${URL}/${course._id}`
@@ -35,19 +51,6 @@ function Kanbas() {
     useEffect(() => {
         findAllCourses();
     }, []);
-
-
-    const updateCourse = () => {
-        setCourses(
-            courses.map((c) => {
-                if (c._id === course._id) {
-                    return course;
-                } else {
-                    return c;
-                }
-            })
-        );
-    };
 
     return (
         <Provider store={store}>

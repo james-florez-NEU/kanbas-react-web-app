@@ -8,7 +8,7 @@ import {
     setModule,
     setModules,
 } from "./modulesReducer";
-import {findModulesForCourse} from "./client";
+import {findModulesForCourse, createModule} from "./client";
 import "./index.css";
 
 function ModuleList() {
@@ -20,6 +20,11 @@ function ModuleList() {
             );
     }, [courseId]);
 
+    const handleAddModule = () => {
+        createModule(courseId, module).then((module) => {
+            dispatch(addModule(module));
+        });
+    };
 
 
     const modules = useSelector((state) => state.modulesReducer.modules);
@@ -31,7 +36,7 @@ function ModuleList() {
             <li className="list-group-item">
                 <button
                     className="btn btn-success float-end me-2 ms-2"
-                    onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+                    onClick={handleAddModule}>
                     Add
                 </button>
                 <button

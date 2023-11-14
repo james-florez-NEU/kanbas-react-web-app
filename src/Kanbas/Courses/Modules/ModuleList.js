@@ -8,24 +8,28 @@ import {
     setModule,
     setModules,
 } from "./modulesReducer";
-import {findModulesForCourse, createModule} from "./client";
+import * as client from "./client";
 import "./index.css";
 
 function ModuleList() {
     const { courseId } = useParams();
+
+    const handleDeleteModule = (moduleId) => {
+        client.deleteModule(moduleId).then((status) => {
+            dispatch(deleteModule(moduleId));
+        });
+    };
+    const handleAddModule = () => {
+        client.createModule(courseId, module).then((module) => {
+            dispatch(addModule(module));
+        });
+    };
     useEffect(() => {
-        findModulesForCourse(courseId)
+        client.findModulesForCourse(courseId)
             .then((modules) =>
                 dispatch(setModules(modules))
             );
     }, [courseId]);
-
-    const handleAddModule = () => {
-        createModule(courseId, module).then((module) => {
-            dispatch(addModule(module));
-        });
-    };
-
 
     const modules = useSelector((state) => state.modulesReducer.modules);
     const module = useSelector((state) => state.modulesReducer.module);
@@ -62,7 +66,7 @@ function ModuleList() {
                             </button>
                             <button
                                 className ="btn btn-danger float-end"
-                                onClick={() => dispatch(deleteModule(module._id))}>
+                                onClick={() => handleDeleteModule(module._id)}>
                                 Delete
                             </button>
                             <h3>{module.name}</h3>

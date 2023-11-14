@@ -12,6 +12,11 @@ import axios from "axios";
 function Kanbas() {
     const [courses, setCourses] = useState([]);
     const URL = "http://localhost:4000/api/courses";
+    const addNewCourse = async () => {
+        const response = await axios.post(URL, course);
+        setCourses(currentCourses => [response.data, ...currentCourses]);
+        setCourse({ name: "" });
+    };
     const findAllCourses = async () => {
         const response = await axios.get(URL);
         setCourses(response.data);
@@ -24,9 +29,7 @@ function Kanbas() {
         name: "New Course",      number: "New Number",
         startDate: "2023-09-10", endDate: "2023-12-15",
     });
-    const addNewCourse = () => {
-        setCourses([...courses, { ...course, _id: new Date().getTime().toString() }]);
-    };
+
     const deleteCourse = (courseId) => {
         setCourses(courses.filter((course) => course._id !== courseId));
     };

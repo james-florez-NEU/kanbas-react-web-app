@@ -14,6 +14,10 @@ import "./index.css";
 function ModuleList() {
     const { courseId } = useParams();
 
+    const handleUpdateModule = async () => {
+        const status = await client.updateModule(module);
+        dispatch(updateModule(module));
+    };
     const handleDeleteModule = (moduleId) => {
         client.deleteModule(moduleId).then((status) => {
             dispatch(deleteModule(moduleId));
@@ -45,7 +49,7 @@ function ModuleList() {
                 </button>
                 <button
                     className="btn btn-dark float-end"
-                    onClick={() => dispatch(updateModule(module))}>
+                    onClick={handleUpdateModule}>
                     Update
                 </button>
                 <input value={module.name}

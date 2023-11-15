@@ -81,7 +81,7 @@ function WorkingWithArrays() {
                 Get Todo by ID
             </a>
             <h3>Filtering Array Items</h3>
-            <a href={`${API}/${todo.id}?completed=true`}
+            <a href={`${API}?completed=true`}
                className="btn btn-primary me-2" >
                 Get Completed Todos
             </a>

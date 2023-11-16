@@ -33,11 +33,11 @@ function Kanbas() {
         );
         setCourse({ name: "" });
     };
-    const deleteCourse = async (course) => {
+    const deleteCourse = async (course_id) => {
         const response = await axios.delete(
-            `${URL}/${course._id}`
+            `${URL}/${course_id}`
         );
-        setCourses(courses.filter((c) => c._id !== course._id));
+        setCourses(courses.filter((c) => c._id !== course_id));
     };
     const addNewCourse = async () => {
         const response = await axios.post(URL, course);
@@ -66,7 +66,7 @@ function Kanbas() {
                                 course={course}
                                 setCourse={setCourse}
                                 addNewCourse={addNewCourse}
-                                deleteCourse={deleteCourse}
+                                deleteCourse={(course_id) => deleteCourse(course_id)}
                                 updateCourse={updateCourse}/>
                         } />
                         <Route path="Courses/:courseId/*" element={<Courses courses={courses}/>} />

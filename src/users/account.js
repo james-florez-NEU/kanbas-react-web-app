@@ -8,6 +8,9 @@ function Account() {
         const account = await client.account();
         setAccount(account);
     };
+    const save = async () => {
+        await client.updateUser(account);
+    };
     useEffect(() => {
         fetchAccount();
     }, []);
@@ -38,6 +41,9 @@ function Account() {
                         <option value="FACULTY">Faculty</option>
                         <option value="STUDENT">Student</option>
                     </select>
+                    <button onClick={save}>
+                        Save
+                    </button>
                 </div>
             )}
         </div>

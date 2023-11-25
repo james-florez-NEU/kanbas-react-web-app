@@ -1,6 +1,6 @@
 import * as client from "./client";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 function Account() {
     const [account, setAccount] = useState(null);
     const navigate = useNavigate();
@@ -46,6 +46,10 @@ function Account() {
                     </button>
                 </div>
             )}
+
+            <Link to="/project/admin/users" className="btn btn-warning w-100">
+                Users
+            </Link>
         </div>
     );
 }

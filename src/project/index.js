@@ -1,5 +1,6 @@
 import Signin from "../users/signin";
 import Account from "../users/account";
+import UserTable from "../users/table";
 import {Routes, Route, Navigate, Link} from "react-router-dom";
 import Nav from "../Nav";
 function Project() {
@@ -21,6 +22,7 @@ function Project() {
                     <Route path="/" element={<Navigate to="/project/home" />} />
                     <Route path="/signin" element={<Signin />} />
                     <Route path="/account" element={<Account />} />
+                    <Route path="/admin/users" element={<UserTable />} />
                 </Routes>
             </div>
         </div>

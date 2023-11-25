@@ -5,6 +5,14 @@ import * as client from "./client";
 function UserTable() {
     const [users, setUsers] = useState([]);
     const [user, setUser] = useState({ username: "", password: "", role: "USER" });
+    const deleteUser = async (user) => {
+        try {
+            await client.deleteUser(user);
+            setUsers(users.filter((u) => u._id !== user._id));
+        } catch (err) {
+            console.log(err);
+        }
+    };
     const selectUser = async (user) => {
         try {
             const u = await client.findUserById(user._id);
@@ -78,9 +86,9 @@ function UserTable() {
                         <td>{user.firstName}</td>
                         <td>{user.lastName}</td>
                         <td className="text-nowrap">
-                            {/*<button className="btn btn-danger me-2">*/}
-                            {/*    <BsTrash3Fill onClick={() => deleteUser(user)} />*/}
-                            {/*</button>*/}
+                            <button className="btn btn-danger me-2">
+                                <BsTrash3Fill onClick={() => deleteUser(user)} />
+                            </button>
                             <button className="btn btn-warning me-2">
                                 <BsPencil onClick={() => selectUser(user)} />
                             </button>

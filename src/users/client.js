@@ -30,3 +30,8 @@ export const deleteUser = async (user) => {
         `${USERS_API}/${user._id}`);
     return response.data;
 };
+export const signup = async (credentials) => {
+    const response = await axios.post(
+        `${USERS_API}/signup`, credentials);
+    return response.data;
+};

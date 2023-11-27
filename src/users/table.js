@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import {  BsFillCheckCircleFill, BsTrash3Fill, BsPlusCircleFill, BsPencil }
     from "react-icons/bs";
 import * as client from "./client";
+import {Link} from "react-router-dom";
 function UserTable() {
     const [users, setUsers] = useState([]);
     const [user, setUser] = useState({ username: "", password: "", role: "USER" });
@@ -85,6 +86,11 @@ function UserTable() {
                         <td>{user.username}</td>
                         <td>{user.firstName}</td>
                         <td>{user.lastName}</td>
+                        <td>
+                            <Link to={`/project/account/${user._id}`}>
+                                {user.username}
+                            </Link>
+                        </td>
                         <td className="text-nowrap">
                             <button className="btn btn-danger me-2">
                                 <BsTrash3Fill onClick={() => deleteUser(user)} />

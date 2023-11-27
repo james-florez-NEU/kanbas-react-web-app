@@ -16,6 +16,10 @@ function Account() {
     const save = async () => {
         await client.updateUser(account);
     };
+    const signout = async () => {
+        await client.signout();
+        navigate("/project/signin");
+    };
     useEffect(() => {
         if (id) {
             findUserById(id);
@@ -52,6 +56,9 @@ function Account() {
                     </select>
                     <button onClick={save}>
                         Save
+                    </button>
+                    <button onClick={signout}>
+                        Signout
                     </button>
                 </div>
             )}

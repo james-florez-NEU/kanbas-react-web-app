@@ -1,7 +1,7 @@
 
 import WeatherNavigation from "./KanbasNavigation";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Dashboard from "./Dashboard";
+import Home from "./Dashboard";
 import Courses from "./Courses";
 import db from "./Database";
 import { useState, useEffect } from "react";
@@ -58,10 +58,9 @@ function Kanbas() {
                 <WeatherNavigation />
                 <div className="flex-fill">
                     <Routes>
-                        <Route path="/" element={<Navigate to="Dashboard" />} />
-                        <Route path="Account" element={<h1>Account</h1>} />
-                        <Route path="Dashboard" element={
-                            <Dashboard
+                        <Route path="/" element={<Navigate to="Home" />} />
+                        <Route path="Home" element={
+                            <Home
                                 courses={courses}
                                 course={course}
                                 setCourse={setCourse}
@@ -70,6 +69,7 @@ function Kanbas() {
                                 updateCourse={updateCourse}/>
                         } />
                         <Route path="Courses/:courseId/*" element={<Courses courses={courses}/>} />
+                        <Route path="Profile" element={<h1>Profile</h1>} />
                     </Routes>
                 </div>
             </div>

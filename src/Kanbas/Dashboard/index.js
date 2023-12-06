@@ -3,16 +3,26 @@ import { Link } from "react-router-dom";
 import db from "../Database";
 import "./index.css";
 import {FaPenSquare} from "react-icons/fa";
-function Dashboard(
+function Home(
     { courses, course, setCourse, addNewCourse,
         deleteCourse, updateCourse }
 ) {
     return (
         <div className="main-content">
             <div>
-                <h1>Dashboard</h1>
+                <h1>Home</h1>
                 <hr/>
-                <h2>Published Courses</h2>
+                <h2>Weather Forecasts</h2>
+                <hr/>
+            </div>
+            <div className="list-group">
+                Forecast 1
+            </div>
+
+
+
+            <div>
+                <h2>Weather Channels</h2>
                 <hr/>
             </div>
 
@@ -36,13 +46,13 @@ function Dashboard(
             <div className="list-group">
                 {courses.map((course) => (
                     <Link key={course._id}
-                        to={`/Kanbas/Courses/${course._id}`}
-                        className="list-group-item">
+                          to={`/Kanbas/Courses/${course._id}`}
+                          className="list-group-item">
                         <button className="btn btn-danger float-end ms-2 me-2"
-                            onClick={(event) => {
-                                event.preventDefault();
-                                deleteCourse(course._id);
-                            }}>
+                                onClick={(event) => {
+                                    event.preventDefault();
+                                    deleteCourse(course._id);
+                                }}>
                             Delete
                         </button>
                         <button className="btn btn-warning float-end ms-2"
@@ -57,8 +67,7 @@ function Dashboard(
                 ))}
             </div>
 
-
         </div>
     );
 }
-export default Dashboard;
+export default Home;

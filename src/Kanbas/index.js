@@ -1,5 +1,5 @@
 
-import KanbasNavigation from "./KanbasNavigation";
+import WeatherNavigation from "./KanbasNavigation";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
@@ -55,7 +55,7 @@ function Kanbas() {
     return (
         <Provider store={store}>
             <div className="d-flex">
-                <KanbasNavigation />
+                <WeatherNavigation />
                 <div className="flex-fill">
                     <Routes>
                         <Route path="/" element={<Navigate to="Dashboard" />} />

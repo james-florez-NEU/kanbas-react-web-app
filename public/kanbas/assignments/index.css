@@ -67,7 +67,7 @@ a {
     border-color: black;
 }
 
-.kanbas_navigation {
+.weather_navigation {
     background-color: black;
     width: 85px;
     display: flex;
@@ -88,11 +88,11 @@ a {
     align-content: center;
 }
 
-.kanbas_navigation_icon {
+.weather_navigation_icon {
     color: red;
 }
 
-.kanbas_navigation_icon_user {
+.weather_navigation_icon_user {
     color: #D3D3D3;
 }
 
@@ -104,7 +104,7 @@ a {
     padding: 10px;
 }
 
-.kanbas_navigation img {
+.weather_navigation img {
     width: 100%; /* Make the image fill the width of its container */
     height: auto; /* Maintain the image's aspect ratio */
 }

@@ -4,11 +4,11 @@
 
 .list-group-item.active {
     background-color: white;
-    color: red;
+    color: deepskyblue;
 }
 
-.kanbas_navigation {
-    background-color: black;
+.weather_navigation {
+    background-color: deepskyblue;
     color: white;
     width: 85px;
     flex-direction: column;
@@ -17,25 +17,20 @@
     border-radius: 0;
 }
 
-.kanbas_navigation_item {
-    background-color: black;
+.weather_navigation_item {
+    background-color: deepskyblue;
     color: white;
     border: 0;
     padding-bottom: 5px;
 }
 
-.kanbas_navigation img {
-    width: 100%;
-    height: auto;
-}
-
-.kanbas_navigation_icon {
+.weather_navigation_icon {
     color: red;
     font-size: 2em;
     padding-top: 5px;
 }
 
-.kanbas_navigation_icon_user {
+.weather_navigation_icon_user {
     color: #D3D3D3;
     font-size: 2em;
 }

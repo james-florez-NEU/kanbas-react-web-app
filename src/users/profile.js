@@ -1,7 +1,7 @@
 import * as client from "./client";
 import { useState, useEffect } from "react";
 import {Link, useNavigate, useParams} from "react-router-dom";
-function Account() {
+function Profile() {
     const { id } = useParams();
     const [account, setAccount] = useState(null);
     const navigate = useNavigate();
@@ -29,7 +29,7 @@ function Account() {
     }, []);
     return (
         <div className="w-50">
-            <h1>Account</h1>
+            <h1>Profile</h1>
             {account && (
                 <div>
                     <input value={account.password}
@@ -69,4 +69,4 @@ function Account() {
         </div>
     );
 }
-export default Account;
+export default Profile;

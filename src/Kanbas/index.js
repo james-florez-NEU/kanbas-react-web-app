@@ -1,5 +1,5 @@
 
-import WeatherNavigation from "./KanbasNavigation";
+import WeatherNavigation from "./WeatherNavigation";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Dashboard";
 import Courses from "./Courses";
@@ -8,6 +8,10 @@ import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
+import Signin from "../users/signin";
+import Signup from "../users/signup";
+import Account from "../users/account";
+import UserTable from "../users/table";
 
 function Kanbas() {
     const [courses, setCourses] = useState([]);
@@ -58,8 +62,8 @@ function Kanbas() {
                 <WeatherNavigation />
                 <div className="flex-fill">
                     <Routes>
-                        <Route path="/" element={<Navigate to="Home" />} />
-                        <Route path="Home" element={
+                        <Route path="/" element={<Navigate to="home" />} />
+                        <Route path="home" element={
                             <Home
                                 courses={courses}
                                 course={course}
@@ -70,6 +74,11 @@ function Kanbas() {
                         } />
                         <Route path="Courses/:courseId/*" element={<Courses courses={courses}/>} />
                         <Route path="Profile" element={<h1>Profile</h1>} />
+                        <Route path="/signin" element={<Signin />} />
+                        <Route path="/signup" element={<Signup />} />
+                        <Route path="/account" element={<Account />} />
+                        <Route path="/account/:id" element={<Account />} />
+                        <Route path="/admin/users" element={<UserTable />} />
                     </Routes>
                 </div>
             </div>

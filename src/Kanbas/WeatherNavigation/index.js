@@ -6,12 +6,13 @@ import { RiDashboard3Fill } from "react-icons/ri";
 import { BsFillCalendar2WeekFill } from "react-icons/bs";
 import "./weather_navigation.css";
 function WeatherNavigation() {
-    const links = ["Home", "Search", "Profile", "Login"];
+    const links = ["Home", "Search", "Profile", "Login", "Register"];
     const linkToIconMap = {
-        Profile: <BiUserCircle className="navigation_icon_user align-content-center" />,
-        Home: <FaCloudSunRain className="navigation_icon" />,
-        Search: <FaMagnifyingGlass className="navigation_icon" />,
-        Login: <FaArrowRightFromBracket className="navigation_icon" />,
+        Profile: <BiUserCircle className="weather_navigation_icon" />,
+        Home: <FaCloudSunRain className="weather_navigation_icon" />,
+        Search: <FaMagnifyingGlass className="weather_navigation_icon" />,
+        Login: <FaArrowRightFromBracket className="weather_navigation_icon" />,
+        Register: <FaBook className="weather_navigation_icon"/>,
     };
     const { pathname } = useLocation();
     return (

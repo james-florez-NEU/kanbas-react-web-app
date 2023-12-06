@@ -25,12 +25,6 @@
 }
 
 .weather_navigation_icon {
-    color: red;
     font-size: 2em;
     padding-top: 5px;
-}
-
-.weather_navigation_icon_user {
-    color: #D3D3D3;
-    font-size: 2em;
 }

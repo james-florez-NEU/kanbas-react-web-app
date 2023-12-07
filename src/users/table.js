@@ -87,7 +87,7 @@ function UserTable() {
                         <td>{user.firstName}</td>
                         <td>{user.lastName}</td>
                         <td>
-                            <Link to={`/project/account/${user._id}`}>
+                            <Link to={`/kanbas/profile/${user._id}`}>
                                 {user.username}
                             </Link>
                         </td>

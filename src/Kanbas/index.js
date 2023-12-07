@@ -12,6 +12,7 @@ import Login from "../users/login";
 import Register from "../users/register";
 import Profile from "../users/profile";
 import UserTable from "../users/table";
+import Search from "./Search";
 
 function Kanbas() {
     const [courses, setCourses] = useState([]);
@@ -78,6 +79,7 @@ function Kanbas() {
                         <Route path="/profile" element={<Profile />} />
                         <Route path="/profile/:id" element={<Profile />} />
                         <Route path="/admin/users" element={<UserTable />} />
+                        <Route path="/search" element={<Search />} />
                     </Routes>
                 </div>
             </div>

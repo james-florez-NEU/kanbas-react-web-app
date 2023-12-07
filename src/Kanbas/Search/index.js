@@ -5,7 +5,7 @@ const Search = () => {
     const [search, setSearch] = useState("");
     const navigate = useNavigate();
     const executeSearch = async () => {
-        navigate("/kanbas/search/:search");
+        navigate(`/kanbas/results/${search}`);
     }
     return (
         <div>

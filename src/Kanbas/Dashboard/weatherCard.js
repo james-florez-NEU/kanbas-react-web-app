@@ -21,7 +21,6 @@ const WeatherCard = () => {
     }, []);
 
     return (
-        <Routes>
         <div>
             {weatherData ? (
                 <Link to="details">
@@ -51,9 +50,8 @@ const WeatherCard = () => {
                 <p>Loading weather data...</p>
             )}
 
-            <Route path="details" element={<WeatherDetails weatherData={weatherData} />} />
+            {/*<Route path="details" element={<WeatherDetails weatherData={weatherData} />} />*/}
         </div>
-        </Routes>
     );
 };
 

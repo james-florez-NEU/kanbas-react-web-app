@@ -50,9 +50,8 @@ function Profile() {
                     <select onChange={(e) => setAccount({ ...account,
                         role: e.target.value })}>
                         <option value="USER">User</option>
-                        <option value="ADMIN">Admin</option>
-                        <option value="FACULTY">Faculty</option>
-                        <option value="STUDENT">Student</option>
+                        <option value="MODERATOR">Moderator</option>
+                        <option value="FORECASTER">Weather Forecaster</option>
                     </select>
                     <button onClick={save}>
                         Save

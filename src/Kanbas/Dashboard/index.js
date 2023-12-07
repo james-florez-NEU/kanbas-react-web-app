@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import db from "../Database";
 import "./index.css";
 import {FaPenSquare} from "react-icons/fa";
+import * as client from "../../users/client";
+import WeatherDisplay from "./weatherDisplay";
 function Home(
     { courses, course, setCourse, addNewCourse,
         deleteCourse, updateCourse }
@@ -16,7 +18,7 @@ function Home(
                 <hr/>
             </div>
             <div className="list-group">
-                Forecast 1
+                <WeatherDisplay/>
 
             </div>
 

@@ -4,7 +4,7 @@ import db from "../Database";
 import "./index.css";
 import {FaPenSquare} from "react-icons/fa";
 import * as client from "../../users/client";
-import WeatherDisplay from "./weatherDisplay";
+import WeatherCard from "./weatherCard";
 function Home(
     { courses, course, setCourse, addNewCourse,
         deleteCourse, updateCourse }
@@ -18,7 +18,7 @@ function Home(
                 <hr/>
             </div>
             <div className="list-group">
-                <WeatherDisplay/>
+                <WeatherCard/>
 
             </div>
 

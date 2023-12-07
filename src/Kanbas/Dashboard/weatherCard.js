@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import * as client from "../../users/client";
 
-const WeatherDisplay = () => {
+const WeatherCard = () => {
     const [weatherData, setWeatherData] = useState(null);
 
     const fetchWeatherData = async () => {
@@ -48,4 +48,4 @@ const WeatherDisplay = () => {
     );
 };
 
-export default WeatherDisplay;
+export default WeatherCard;

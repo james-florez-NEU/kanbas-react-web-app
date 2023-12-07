@@ -7,7 +7,7 @@ const WeatherDisplay = () => {
     const fetchWeatherData = async () => {
         try {
             const weather = await client.currentWeather();
-            setWeatherData(weather.data);
+            setWeatherData(weather);
         } catch (error) {
             console.error('Error fetching weather data:', error);
         }

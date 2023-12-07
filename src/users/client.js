@@ -43,7 +43,3 @@ export const signout = async () => {
     const response = await request.post(`${USERS_API}/signout`);
     return response.data;
 };
-export const currentWeather = async () => {
-    const response = await request.get(`${WEATHER_API}`);
-    return response.data;
-}

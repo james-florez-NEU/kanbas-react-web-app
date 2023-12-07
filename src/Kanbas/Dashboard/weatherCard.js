@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import * as client from "../../users/client";
+import * as client from "../Client/client";
 import {Route, Router, Routes} from "react-router";
 import {Link} from "react-router-dom";
 import WeatherDetails from "../Details/weatherDetails";
@@ -9,7 +9,7 @@ const WeatherCard = () => {
 
     const fetchWeatherData = async () => {
         try {
-            const weather = await client.currentWeather();
+            const weather = await client.getWeather(2801268);
             setWeatherData(weather);
         } catch (error) {
             console.error('Error fetching weather data:', error);

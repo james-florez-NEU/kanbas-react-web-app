@@ -17,7 +17,7 @@ const WeatherDetails = ({ weatherData }) => {
                         <li className={"list-group-item"}>Pressure: {weatherData.current.pressure_in} in</li>
                         <li className={"list-group-item"}>UV Index: {weatherData.current.uv}</li>
                         <li className={"list-group-item"}>Visibility: {weatherData.current.vis_miles} miles</li>
-                        <li className={"list-group-item"}>Cloud Cover: {weatherData.current.cloud} %</li>
+                        <li className={"list-group-item"}>Cloud Cover: {weatherData.current.cloud}%</li>
                         <li className="list-group-item">Wind Speed: {weatherData.current.wind_kph} km/h</li>
                         <li className={"list-group-item"}>Wind Gust: {weatherData.current.gust_kph} km/h</li>
                         <li className={"list-group-item"}>Wind Direction: {weatherData.current.wind_dir}</li>

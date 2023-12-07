@@ -8,8 +8,8 @@ import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
-import Signin from "../users/signin";
-import Signup from "../users/signup";
+import Login from "../users/login";
+import Register from "../users/register";
 import Profile from "../users/profile";
 import UserTable from "../users/table";
 
@@ -73,8 +73,8 @@ function Kanbas() {
                                 updateCourse={updateCourse}/>
                         } />
                         <Route path="Courses/:courseId/*" element={<Courses courses={courses}/>} />
-                        <Route path="/signin" element={<Signin />} />
-                        <Route path="/signup" element={<Signup />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/register" element={<Register />} />
                         <Route path="/profile" element={<Profile />} />
                         <Route path="/profile/:id" element={<Profile />} />
                         <Route path="/admin/users" element={<UserTable />} />

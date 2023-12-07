@@ -1,5 +1,5 @@
-import Signin from "../users/signin";
-import Signup from "../users/signup";
+import Login from "../users/login";
+import Register from "../users/register";
 import Profile from "../users/profile";
 import UserTable from "../users/table";
 import {Routes, Route, Navigate, Link} from "react-router-dom";
@@ -22,8 +22,8 @@ function Project() {
             <div className="col-10">
                 <Routes>
                     <Route path="/" element={<Navigate to="/project/home" />} />
-                    <Route path="/signin" element={<Signin />} />
-                    <Route path="/signup" element={<Signup />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/profile/:id" element={<Profile />} />
                     <Route path="/admin/users" element={<UserTable />} />

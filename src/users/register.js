@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import * as client from "./client";
-function Signup() {
+function Register() {
     const [error, setError] = useState("");
     const [credentials, setCredentials] = useState({
         username: "", password: "" });
@@ -9,14 +9,14 @@ function Signup() {
     const signup = async () => {
         try {
             await client.signup(credentials);
-            navigate("/project/account");
+            navigate("/kanbas/profile");
         } catch (err) {
             setError(err.response.data.message);
         }
     };
     return (
         <div>
-            <h1>Signup</h1>
+            <h1>Register</h1>
             {error && <div>{error}</div>}
             <input
                 value={credentials.username}
@@ -34,4 +34,4 @@ function Signup() {
         </div>
     );
 }
-export default Signup;
+export default Register;
